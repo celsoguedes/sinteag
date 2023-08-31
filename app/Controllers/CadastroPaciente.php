@@ -2,13 +2,12 @@
 
 namespace App\Controllers;
 
-class Home extends BaseController
+class CadastroPaciente extends BaseController
 {
     //public function index(): string
     public function index()
     {
               $data = ['titulo' => 'SINTEAG'];
-        return view('paginaprincipal', $data);
+        return view('cadastropaciente', $data);              
     }
-
 }
