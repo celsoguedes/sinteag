@@ -32,8 +32,8 @@ $routes->set404Override();
 $routes->get('/', 'Home::index');
 $routes->get('/CadastroPaciente','CadastroPaciente::index');
 $routes->get('/CadastroProfissional','CadastroProfissional::index');
-//$routes->get('/PaginaPrincipal/(:num)', 'PaginaPrincipal::show/$1');
-//$routes->get('/PaginaPrincipal/(:alpha)/(:num)', 'PaginaPrincipal::cat/$1/$2');
+$routes->get('/CadastroConsulta', 'CadastroConsulta');
+$routes->get('/MovimentoCaixa', 'MovimentoCaixa');
 
 /*
  * --------------------------------------------------------------------

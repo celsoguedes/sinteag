@@ -7,7 +7,7 @@ class CadastroProfissional extends BaseController
     //public function index(): string
     public function index()
     {
-              $data = ['titulo' => 'SINTEAG'];
+              $data = ['titulo' => 'Cadastro de Profissionais'];
         return view('cadastroprofissional', $data);              
     }
 }
