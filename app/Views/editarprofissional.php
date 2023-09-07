@@ -3,16 +3,20 @@
 <?php echo $this->section('conteudo');?>
 <div class="p-3 mb-2 bg-info text-dark">
 <div class="container">
-<h1>Cadastro de Pacientes</h1>
+<h1>Cadastro de Profissionais</h1>
     <form>
       <div class="form-row">
         <div class="form-group col-md-6">
           <label for="nome">Nome:</label>
-          <input type="text" class="form-control" id="nome_paciente" placeholder="Nome">
+          <input type="text" class="form-control" id="nome" placeholder="Nome">
         </div>
         <div class="form-group col-md-6">
           <label for="cpf">CPF:</label>
           <input type="text" class="form-control" id="cpf" placeholder="CPF">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="cpf">Especialidade:</label>
+          <input type="text" class="form-control" id="Especialidade" placeholder="Especialidade">
         </div>
       </div>
       <div class="form-row">
@@ -58,10 +62,7 @@
           <label for="telefone">Telefone:</label>
           <input type="text" class="form-control" id="telefone" placeholder="Telefone">
         </div>
-        <div class="form-group col-md-13">
-          <label for="observacoes">Observações:</label>
-          <textarea class="form-control" id="observacoes" placeholder="Observações"></textarea>
-        </div>
+        
       </div>
       <button type="submit" class="btn btn-primary">Cadastrar</button>
     </form>

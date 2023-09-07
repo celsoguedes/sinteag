@@ -34,6 +34,8 @@ $routes->get('/CadastroPaciente','CadastroPaciente::index');
 $routes->get('/CadastroProfissional','CadastroProfissional::index');
 $routes->get('/CadastroConsulta', 'CadastroConsulta');
 $routes->get('/MovimentoCaixa', 'MovimentoCaixa');
+$routes->get('/EditarPaciente', 'EditarPaciente');
+$routes->get('/EditarProfissional', 'EditarProfissional');
 
 /*
  * --------------------------------------------------------------------
