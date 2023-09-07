@@ -13,25 +13,31 @@
                 <label for="profissional">Profissional:</label>
                 <input type="text" class="form-control" id="profissional">
             </div>
-            <div class="form-group col-md-3">
-                <label for="tipo_consulta">Tipo de consulta:</label>
-                <input type="text" class="form-control" id="tipo_consulta">
+            <div class="form-group col-md-1">
+            <label for="cars">Tipo de Consulta:</label>
+                <select name="tipoConsulta" id="tipoConsulta">
+                <option value="consultorio">Consultório</option>
+                <option value="residencia">Residência</option>
+                </select>
             </div>
-            <div class="form-group col-md-3">
+            <div class="form-group col-md-2">
                 <label for="valor">Valor:</label>
                 <input type="text" class="form-control" id="valor">
             </div>
             <div class="form-group col-md-2">
                 <label for="data">Data:</label>
-                <input type="text" class="form-control" id="data">
+                <input type="date" class="form-control" id="data">
             </div>
             <div class="form-group col-md-2">
                 <label for="horario">Horário:</label>
-                <input type="text" class="form-control" id="horario">
+                <input type="time" class="form-control" id="horario">
             </div>
-            <div class="form-group col-md-2">
-                <label for="status">Status:</label>
-                <input type="text" class="form-control" id="status">
+            <div class="form-group col-md-1">
+            <label for="consulta">Status da Consulta:</label>
+                <select name="tipoConsulta" id="tipoConsulta">
+                <option value="aguardando">Aguardando</option>
+                <option value="realizada">Realizada</option>
+                </select>
             </div>
             <button type="submit" class="btn btn-primary">Enviar</button>
         </form>

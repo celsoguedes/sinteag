@@ -5,7 +5,7 @@
 <div class="p-3 mb-2 bg-info text-dark">
 <div class="container mt-3">
     <div class="row">
-      <div class="col-md-6">
+      <div class="col-md-4 mx-auto">
         <div class="card">
           <div class="card-header">
             Entradas
@@ -28,7 +28,7 @@
           </div>
         </div>
       </div>
-      <div class="col-md-6">
+      <div class="col-md-4 mx-auto">
         <div class="card">
           <div class="card-header">
             Saídas
@@ -146,6 +146,18 @@
       </div>
     </div>
   </div>
+
+  <div class="container">
+  <div class="row justify-content-between">
+    <div class="col-2">
+      <input type="text" class="form-control" placeholder="Primeiro input">
+    </div>
+    <div class="col-2">
+      <input type="text" class="form-control" placeholder="Segundo input">
+    </div>
+  </div>
+</div>
+
 </div>
 <?php echo $this->endSection();?>
 
