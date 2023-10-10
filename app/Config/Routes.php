@@ -29,13 +29,23 @@ $routes->set404Override();
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->get('/', 'Home::index');
+$routes->get('/Login', 'Login');
+$routes->get('/Home', 'Home::index');
 $routes->get('/CadastroPaciente','CadastroPaciente::index');
 $routes->get('/CadastroProfissional','CadastroProfissional::index');
+$routes->get('/CadastroUsuarios', 'CadastroUsuarios');
 $routes->get('/CadastroConsulta', 'CadastroConsulta');
-$routes->get('/MovimentoCaixa', 'MovimentoCaixa');
+$routes->get('/EditarConsultas', 'EditarConsultas');
 $routes->get('/EditarPaciente', 'EditarPaciente');
 $routes->get('/EditarProfissional', 'EditarProfissional');
+$routes->get('/PesquisarPacientes', 'PesquisarPacientes');
+$routes->get('/PesquisarProfissionais', 'PesquisarProfissionais');
+$routes->get('/PesquisarConsultas', 'PesquisarConsultas');
+$routes->get('/AgendaDoDia', 'AgendaDoDia');
+$routes->get('/MovimentoCaixa', 'MovimentoCaixa');
+$routes->get('/RelatorioDeCaixa', 'RelatorioDeCaixa');
+
+
 
 /*
  * --------------------------------------------------------------------

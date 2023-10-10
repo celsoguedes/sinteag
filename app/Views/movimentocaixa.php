@@ -3,6 +3,7 @@
 
 <?php echo $this->section('conteudo');?>
 <div class="p-3 mb-2 bg-info text-dark">
+<h1>Movimento de Caixa</h1>
 <div class="container mt-3">
     <div class="row">
       <div class="col-md-4 mx-auto">
@@ -63,38 +64,7 @@
           <th>Saídas</th>
         </tr>
       </thead>
-      <tbody>
-      <tr>
-          <th></th>
-          <th></th>
-          <th></th>
-          <th></th>
-        </tr>
-        <tr>
-          <th></th>
-          <th></th>
-          <th></th>
-          <th></th>
-        </tr>
-        <tr>
-          <th></th>
-          <th></th>
-          <th></th>
-          <th></th>
-        </tr>
-        <tr>
-          <th></th>
-          <th></th>
-          <th></th>
-          <th></th>
-        </tr>
-        <tr>
-          <th></th>
-          <th></th>
-          <th></th>
-          <th></th>
-        </tr>
-      </tbody>
+
     </table>
   </div>
 </div>
