@@ -3,7 +3,7 @@
 <?php echo $this->section('conteudo');?>
 <div class="p-3 mb-2 bg-info text-dark">
 <div class="container">
-<h1>Cadastro de Pacientes</h1>
+<h1>Cadastro de Paciente</h1>
     <form>
       <div class="form-row">
         <div class="form-group col-md-6">

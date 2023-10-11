@@ -3,7 +3,7 @@
 <?php echo $this->section('conteudo');?>
 <div class="p-3 mb-2 bg-info text-dark">
 <div class="container">
-<h1>Editar Pacientes</h1>
+<h1>Editar Paciente</h1>
     <form>
       <div class="form-row">
         <div class="form-group col-md-6">
@@ -63,7 +63,7 @@
           <textarea class="form-control" id="observacoes" placeholder="Observações"></textarea>
         </div>
       </div>
-      <button type="submit" class="btn btn-primary">Cadastrar</button>
+      <button type="submit" class="btn btn-primary">Editar</button>
     </form>
   </div>
   </div>

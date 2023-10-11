@@ -3,7 +3,7 @@
 <?php echo $this->section('conteudo');?>
 <div class="p-3 mb-2 bg-info text-dark">
 <div class="container">
-<h1>Cadastro de Usuarios</h1>
+<h1>Cadastro de Profissional</h1>
     <form>
       <div class="form-row">
         <div class="form-group col-md-6">
@@ -15,8 +15,8 @@
           <input type="text" class="form-control" id="cpf" placeholder="CPF">
         </div>
         <div class="form-group col-md-6">
-          <label for="cpf">Função:</label>
-          <input type="text" class="form-control" id="funcao" placeholder="Função">
+          <label for="cpf">Especialidade:</label>
+          <input type="text" class="form-control" id="Especialidade" placeholder="Especialidade">
         </div>
       </div>
       <div class="form-row">

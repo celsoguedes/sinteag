@@ -24,6 +24,7 @@
               <div class="form-group">
                 <label for="entrada-historico">Histórico:</label>
                 <input type="text" class="form-control" id="entrada-historico">
+                <button type="submit" class="btn btn-primary">Salvar</button>
               </div>
             </form>
           </div>
@@ -47,6 +48,7 @@
               <div class="form-group">
                 <label for="saida-historico">Histórico:</label>
                 <input type="text" class="form-control" id="saida-historico">
+                <button type="submit" class="btn btn-primary">Editar</button>
               </div>
             </form>
           </div>

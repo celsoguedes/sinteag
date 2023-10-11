@@ -2,12 +2,12 @@
 
 namespace App\Controllers;
 
-class CadastroPaciente extends BaseController
+class CadastrarPacientes extends BaseController
 {
     //public function index(): string
     public function index()
     {
               $data = ['titulo' => 'Cadastro de Paciente'];
-        return view('cadastropaciente', $data);              
+        return view('cadastrarpacientes', $data);              
     }
 }

@@ -2,12 +2,12 @@
 
 namespace App\Controllers;
 
-class CadastroProfissional extends BaseController
+class CadastrarProfissionais extends BaseController
 {
     //public function index(): string
     public function index()
     {
               $data = ['titulo' => 'Cadastro de Profissionais'];
-        return view('cadastroprofissional', $data);              
+        return view('cadastrarprofissionais', $data);              
     }
 }

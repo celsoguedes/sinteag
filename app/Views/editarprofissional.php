@@ -3,7 +3,7 @@
 <?php echo $this->section('conteudo');?>
 <div class="p-3 mb-2 bg-info text-dark">
 <div class="container">
-<h1>Editar Profissionais</h1>
+<h1>Editar Profissionaal</h1>
     <form>
       <div class="form-row">
         <div class="form-group col-md-6">
@@ -64,7 +64,7 @@
         </div>
         
       </div>
-      <button type="submit" class="btn btn-primary">Cadastrar</button>
+      <button type="submit" class="btn btn-primary">Editar</button>
     </form>
   </div>
   </div>

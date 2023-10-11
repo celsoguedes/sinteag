@@ -31,11 +31,11 @@ $routes->set404Override();
 // route since we don't have to scan directories.
 $routes->get('/Login', 'Login');
 $routes->get('/Home', 'Home::index');
-$routes->get('/CadastroPaciente','CadastroPaciente::index');
-$routes->get('/CadastroProfissional','CadastroProfissional::index');
-$routes->get('/CadastroUsuarios', 'CadastroUsuarios');
-$routes->get('/CadastroConsulta', 'CadastroConsulta');
-$routes->get('/EditarConsultas', 'EditarConsultas');
+$routes->get('/CadastrarPacientes','CadastrarPacientes::index');
+$routes->get('/CadastrarProfissionais','CadastrarProfissionais::index');
+$routes->get('/CadastrarUsuarios', 'CadastrarUsuarios');
+$routes->get('/CadastrarConsultas', 'CadastrarConsultas');
+$routes->get('/EditarConsulta', 'EditarConsulta');
 $routes->get('/EditarPaciente', 'EditarPaciente');
 $routes->get('/EditarProfissional', 'EditarProfissional');
 $routes->get('/PesquisarPacientes', 'PesquisarPacientes');

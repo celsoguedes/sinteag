@@ -26,6 +26,7 @@
     </table>
   </div>
 </div>
+<button type="submit" class="btn btn-primary">Editar</button>
 
 <?php echo $this->endSection();?>
 

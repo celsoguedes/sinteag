@@ -3,7 +3,7 @@
 <?php echo $this->section('conteudo');?>
 <div class="p-3 mb-2 bg-info text-dark">
 <div class="container">
-        <h1>Cadastro de Consultas</h1>
+        <h1>Editar Consulta</h1>
         <form>
             <div class="form-group col-md-6">
                 <label for="paciente">Paciente:</label>
@@ -39,7 +39,7 @@
                 <option value="realizada">Realizada</option>
                 </select>
             </div>
-            <button type="submit" class="btn btn-primary">Enviar</button>
+            <button type="submit" class="btn btn-primary">Editar</button>
         </form>
     </div>
 </div>

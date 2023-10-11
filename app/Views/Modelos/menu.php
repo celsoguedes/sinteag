@@ -1,33 +1,51 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-        </li>
-      </ul>
-
-    </div>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">SINTEAG</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="dropdownCadastrar" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Cadastrar
+        </a>
+        <div class="dropdown-menu" aria-labelledby="dropdownCadastrar">
+          <a class="dropdown-item" href="#">Pacientes</a>
+          <a class="dropdown-item" href="#">Profissionais</a>
+          <a class="dropdown-item" href="#">Consultas</a>
+          <a class="dropdown-item" href="#">Usuários</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="dropdownEditar" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Editar
+        </a>
+        <div class="dropdown-menu" aria-labelledby="dropdownEditar">
+          <a class="dropdown-item" href="#">Pacientes</a>
+          <a class="dropdown-item" href="#">Profissionais</a>
+          <a class="dropdown-item" href="#">Consultas</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="dropdownPesquisar" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Pesquisar
+        </a>
+        <div class="dropdown-menu" aria-labelledby="dropdownPesquisar">
+          <a class="dropdown-item" href="#">Pacientes</a>
+          <a class="dropdown-item" href="#">Profissionais</a>
+          <a class="dropdown-item" href="#">Consultas</a>
+          <a class="dropdown-item" href="#">Agenda</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="dropdownCaixa" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Caixa
+        </a>
+        <div class="dropdown-menu" aria-labelledby="dropdownCaixa">
+          <a class="dropdown-item" href="#">Movimento</a>
+          <a class="dropdown-item" href="#">Relatórios</a>
+        </div>
+      </li>
+    </ul>
   </div>
 </nav>
