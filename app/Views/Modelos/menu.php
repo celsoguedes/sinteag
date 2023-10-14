@@ -11,10 +11,10 @@
             Cadastro
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Pacientes</a></li>
-            <li><a class="dropdown-item" href="#">Profissionais</a></li>
-            <li><a class="dropdown-item" href="#">Consultas</a></li>
-            <li><a class="dropdown-item" href="#">Usuários</a></li>
+            <li><a class="dropdown-item" href="CadastrarPacientes">Pacientes</a></li>
+            <li><a class="dropdown-item" href="CadastrarProfissionais">Profissionais</a></li>
+            <li><a class="dropdown-item" href="CadastrarConsultas">Consultas</a></li>
+            <li><a class="dropdown-item" href="CadastrarUsuarios">Usuários</a></li>
           </ul>
         </li>
         <li class="nav-item dropdown">
@@ -22,10 +22,10 @@
             Pesquisa
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Pacientes</a></li>
-            <li><a class="dropdown-item" href="#">Profissionais</a></li>
-            <li><a class="dropdown-item" href="#">Consultas</a></li>
-            <li><a class="dropdown-item" href="#">Agenda do dia</a></li>
+            <li><a class="dropdown-item" href="PesquisarPacientes">Pacientes</a></li>
+            <li><a class="dropdown-item" href="PesquisarProfissionais">Profissionais</a></li>
+            <li><a class="dropdown-item" href="PesquisarConsultas">Consultas</a></li>
+            <li><a class="dropdown-item" href="AgendaDoDia">Agenda do dia</a></li>
           </ul>
         </li>
         <li class="nav-item dropdown">
@@ -33,8 +33,8 @@
             Caixa
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Movimento de Caixa</a></li>
-            <li><a class="dropdown-item" href="#">Relatório de Caixa</a></li>
+            <li><a class="dropdown-item" href="MovimentoCaixa">Movimento de Caixa</a></li>
+            <li><a class="dropdown-item" href="RelatorioDeCaixa">Relatório de Caixa</a></li>
           </ul>
         </li>
       </ul>
