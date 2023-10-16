@@ -22,6 +22,20 @@
           <th>Status</th>
         </tr>
       
+      
+        <?php foreach ($pesquisarconsultas as $consulta): ?>
+          <tr>
+            <td><?php echo $consulta->paciente_id;?></td>
+            <td><?php echo $consulta->profissional_id;?></td>
+            <td><?php echo $consulta->agendamento;?></td>
+            <td><?php echo $consulta->Valor;?></td>
+            <td><?php echo $consulta->horario;?></td>
+            <td><?php echo $consulta->Status;?></td>
+
+    
+
+        <?php endforeach; ?>
+          </tr>
       </tbody>
     </table>
   </div>

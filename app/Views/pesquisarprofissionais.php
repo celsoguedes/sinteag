@@ -17,10 +17,19 @@
           <th>Profissional</th>
           <th>CPF</th>
           <th>Telefone</th>
-          <th>Endereço</th>
           <th>Sexo</th>
         </tr>
 
+        <tbody>
+        <?php foreach ($pesquisarprofissionais as $profissional): ?>
+          <tr>
+            <td><?php echo $profissional->Nome_Profissional;?></td>
+            <td><?php echo $profissional->CPF;?></td>
+            <td><?php echo $profissional->Telefone;?></td>
+            <td><?php echo $profissional->Sexo;?></td>
+
+        <?php endforeach; ?>
+          </tr>
       </tbody>
     </table>
     

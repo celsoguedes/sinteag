@@ -107,3 +107,130 @@ in SYSTEMPATH\Database\BaseConnection.php on line 427.
  5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
 INFO - 2023-10-16 14:55:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 15:05:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 15:05:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 15:05:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 15:05:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 15:09:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 15:10:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 15:10:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 15:10:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 15:31:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-16 15:31:39 --> Undefined variable $pesquisarrofissionais
+in APPPATH\Views\pesquisarprofissionais.php on line 24.
+ 1 APPPATH\Views\pesquisarprofissionais.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pesquisarrofissionais', 'C:\\xampp\\htdocs\\sinteag\\app\\Views\\pesquisarprofissionais.php', 24)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\sinteag\\app\\Views\\pesquisarprofissionais.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('pesquisarprofissionais', [], true)
+ 5 APPPATH\Controllers\PesquisarProfissionais.php(16): view('pesquisarprofissionais', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PesquisarProfissionais->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesquisarProfissionais))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-16 15:32:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-16 15:32:23 --> Undefined variable $paciente
+in APPPATH\Views\pesquisarprofissionais.php on line 26.
+ 1 APPPATH\Views\pesquisarprofissionais.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $paciente', 'C:\\xampp\\htdocs\\sinteag\\app\\Views\\pesquisarprofissionais.php', 26)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\sinteag\\app\\Views\\pesquisarprofissionais.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('pesquisarprofissionais', [], true)
+ 5 APPPATH\Controllers\PesquisarProfissionais.php(16): view('pesquisarprofissionais', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PesquisarProfissionais->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesquisarProfissionais))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-16 15:34:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-16 15:34:15 --> Undefined property: stdClass::$Nome_Profissional
+in APPPATH\Views\pesquisarprofissionais.php on line 26.
+ 1 APPPATH\Views\pesquisarprofissionais.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$Nome_Profissional', 'C:\\xampp\\htdocs\\sinteag\\app\\Views\\pesquisarprofissionais.php', 26)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\sinteag\\app\\Views\\pesquisarprofissionais.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('pesquisarprofissionais', [], true)
+ 5 APPPATH\Controllers\PesquisarProfissionais.php(16): view('pesquisarprofissionais', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PesquisarProfissionais->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesquisarProfissionais))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-16 15:35:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-16 15:35:47 --> Undefined property: stdClass::$Nome_Profissional
+in APPPATH\Views\pesquisarprofissionais.php on line 26.
+ 1 APPPATH\Views\pesquisarprofissionais.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$Nome_Profissional', 'C:\\xampp\\htdocs\\sinteag\\app\\Views\\pesquisarprofissionais.php', 26)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\sinteag\\app\\Views\\pesquisarprofissionais.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('pesquisarprofissionais', [], true)
+ 5 APPPATH\Controllers\PesquisarProfissionais.php(16): view('pesquisarprofissionais', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PesquisarProfissionais->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesquisarProfissionais))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-16 15:37:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-16 15:37:46 --> Undefined property: stdClass::$Nome_Profissional
+in APPPATH\Views\pesquisarprofissionais.php on line 26.
+ 1 APPPATH\Views\pesquisarprofissionais.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$Nome_Profissional', 'C:\\xampp\\htdocs\\sinteag\\app\\Views\\pesquisarprofissionais.php', 26)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\sinteag\\app\\Views\\pesquisarprofissionais.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('pesquisarprofissionais', [], true)
+ 5 APPPATH\Controllers\PesquisarProfissionais.php(16): view('pesquisarprofissionais', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PesquisarProfissionais->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesquisarProfissionais))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-16 15:39:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-10-16 15:39:15 --> mysqli_sql_exception: Table 'sinteag.profissionais' doesn't exist in C:\xampp\htdocs\sinteag\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\sinteag\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT Nome_Pro...', 0)
+#1 C:\xampp\htdocs\sinteag\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT Nome_Pro...')
+#2 C:\xampp\htdocs\sinteag\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT Nome_Pro...')
+#3 C:\xampp\htdocs\sinteag\app\Controllers\PesquisarProfissionais.php(12): CodeIgniter\Database\BaseConnection->query('SELECT Nome_Pro...')
+#4 C:\xampp\htdocs\sinteag\system\CodeIgniter.php(932): App\Controllers\PesquisarProfissionais->index()
+#5 C:\xampp\htdocs\sinteag\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesquisarProfissionais))
+#6 C:\xampp\htdocs\sinteag\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\sinteag\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-10-16 15:39:15 --> Table 'sinteag.profissionais' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT Nome_Profissional, CPF, Telefone, Sexo FROM profissionais', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT Nome_Profissional, CPF, Telefone, Sexo FROM profissionais')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT Nome_Profissional, CPF, Telefone, Sexo FROM profissionais')
+ 4 APPPATH\Controllers\PesquisarProfissionais.php(12): CodeIgniter\Database\BaseConnection->query('SELECT Nome_Profissional, CPF, Telefone, Sexo FROM profissionais')
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PesquisarProfissionais->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesquisarProfissionais))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-16 15:39:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 16:23:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 16:44:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-16 16:44:53 --> syntax error, unexpected token "endforeach", expecting end of file
+in APPPATH\Views\pesquisarconsultas.php on line 39.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('pesquisarconsultas', [], true)
+ 3 APPPATH\Controllers\PesquisarConsultas.php(17): view('pesquisarconsultas', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PesquisarConsultas->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesquisarConsultas))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-16 16:45:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-16 16:45:31 --> Undefined property: stdClass::$Nome_Profissional
+in APPPATH\Views\pesquisarconsultas.php on line 29.
+ 1 APPPATH\Views\pesquisarconsultas.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$Nome_Profissional', 'C:\\xampp\\htdocs\\sinteag\\app\\Views\\pesquisarconsultas.php', 29)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\sinteag\\app\\Views\\pesquisarconsultas.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('pesquisarconsultas', [], true)
+ 5 APPPATH\Controllers\PesquisarConsultas.php(17): view('pesquisarconsultas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PesquisarConsultas->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesquisarConsultas))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-16 17:13:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-16 17:13:14 --> Undefined property: stdClass::$paciente_id
+in APPPATH\Views\pesquisarconsultas.php on line 28.
+ 1 APPPATH\Views\pesquisarconsultas.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$paciente_id', 'C:\\xampp\\htdocs\\sinteag\\app\\Views\\pesquisarconsultas.php', 28)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\sinteag\\app\\Views\\pesquisarconsultas.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('pesquisarconsultas', [], true)
+ 5 APPPATH\Controllers\PesquisarConsultas.php(17): view('pesquisarconsultas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PesquisarConsultas->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesquisarConsultas))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-16 17:30:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
