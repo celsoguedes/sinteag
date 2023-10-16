@@ -19,6 +19,14 @@
           <th>Telefone</th>
         </tr>
 
+      <tbody>
+        <?php foreach ($pesquisarpacientes as $paciente): ?>
+          <tr>
+            <td><?php echo $paciente->Nome_Paciente;?></td>
+            <td><?php echo $paciente->CPF;?></td>
+            <td><?php echo $paciente->Telefone;?></td>
+        <?php endforeach; ?>
+          </tr>
       </tbody>
     </table>
     
