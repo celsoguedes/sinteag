@@ -1,0 +1,439 @@
+INFO - 2023-10-19 00:29:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-19 00:29:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-19 00:29:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-19 00:29:23 --> Class "codeigniter\model" not found
+in APPPATH\Models\PacientesModel.php on line 6.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(314): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\sinteag\\app\\Models\\PacientesModel.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\PacientesModel')
+ 4 APPPATH\Controllers\PesquisarPacientes.php(16): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\PacientesModel')
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PesquisarPacientes->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesquisarPacientes))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-19 00:29:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-19 00:29:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-19 00:29:40 --> Class "codeigniter\model" not found
+in APPPATH\Models\PacientesModel.php on line 6.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(314): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\sinteag\\app\\Models\\PacientesModel.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\PacientesModel')
+ 4 APPPATH\Controllers\CadastrarPacientes.php(13): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\PacientesModel')
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CadastrarPacientes->cadastrar()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CadastrarPacientes))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-19 00:30:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-19 00:30:38 --> Class "codeigniter\model" not found
+in APPPATH\Models\PacientesModel.php on line 6.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(314): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\sinteag\\app\\Models\\PacientesModel.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\PacientesModel')
+ 4 APPPATH\Controllers\CadastrarPacientes.php(13): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\PacientesModel')
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CadastrarPacientes->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CadastrarPacientes))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-19 00:33:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-19 00:33:02 --> syntax error, unexpected token "*", expecting end of file
+in APPPATH\Models\PacientesModel.php on line 26.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\sinteag\\app\\Models\\PacientesModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\PacientesModel')
+ 3 APPPATH\Controllers\CadastrarPacientes.php(13): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\PacientesModel')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CadastrarPacientes->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CadastrarPacientes))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-19 01:02:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-19 01:02:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-19 01:02:58 --> syntax error, unexpected token "*", expecting end of file
+in APPPATH\Models\PacientesModel.php on line 26.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\sinteag\\app\\Models\\PacientesModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\PacientesModel')
+ 3 APPPATH\Controllers\CadastrarPacientes.php(13): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\PacientesModel')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CadastrarPacientes->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CadastrarPacientes))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-19 01:03:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-19 01:03:26 --> Class "codeigniter\model" not found
+in APPPATH\Models\PacientesModel.php on line 6.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(314): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\sinteag\\app\\Models\\PacientesModel.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\PacientesModel')
+ 4 APPPATH\Controllers\CadastrarPacientes.php(13): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\PacientesModel')
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CadastrarPacientes->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CadastrarPacientes))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-19 01:08:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-19 01:08:13 --> Class "codeigniter\model" not found
+in APPPATH\Models\PacientesModel.php on line 6.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(314): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\sinteag\\app\\Models\\PacientesModel.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\PacientesModel')
+ 4 APPPATH\Controllers\CadastrarPacientes.php(13): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\PacientesModel')
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CadastrarPacientes->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CadastrarPacientes))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-19 01:08:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-19 01:08:17 --> Class "codeigniter\model" not found
+in APPPATH\Models\PacientesModel.php on line 6.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(314): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\sinteag\\app\\Models\\PacientesModel.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\PacientesModel')
+ 4 APPPATH\Controllers\CadastrarPacientes.php(13): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\PacientesModel')
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CadastrarPacientes->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CadastrarPacientes))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-19 01:15:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-19 01:15:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-10-19 01:15:29 --> Error connecting to the database: mysqli_sql_exception: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente in C:\xampp\htdocs\sinteag\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\xampp\htdocs\sinteag\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('127.0.0.1', 'root', Object(SensitiveParameterValue), 'sinteag', 3306, '', 0)
+#1 C:\xampp\htdocs\sinteag\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\sinteag\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\sinteag\app\Controllers\PesquisarPacientes.php(14): CodeIgniter\Database\BaseConnection->query('SELECT Nome_Pac...')
+#4 C:\xampp\htdocs\sinteag\system\CodeIgniter.php(932): App\Controllers\PesquisarPacientes->index()
+#5 C:\xampp\htdocs\sinteag\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesquisarPacientes))
+#6 C:\xampp\htdocs\sinteag\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\sinteag\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente in C:\xampp\htdocs\sinteag\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\sinteag\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\sinteag\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\sinteag\app\Controllers\PesquisarPacientes.php(14): CodeIgniter\Database\BaseConnection->query('SELECT Nome_Pac...')
+#3 C:\xampp\htdocs\sinteag\system\CodeIgniter.php(932): App\Controllers\PesquisarPacientes->index()
+#4 C:\xampp\htdocs\sinteag\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesquisarPacientes))
+#5 C:\xampp\htdocs\sinteag\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\sinteag\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-10-19 01:15:29 --> Unable to connect to the database.
+Main connection [MySQLi]: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Controllers\PesquisarPacientes.php(14): CodeIgniter\Database\BaseConnection->query('SELECT Nome_Paciente, CPF, Telefone FROM pacientes')
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PesquisarPacientes->index()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesquisarPacientes))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-19 01:19:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-19 01:19:10 --> Undefined property: stdClass::$id
+in APPPATH\Views\pesquisarpacientes.php on line 50.
+ 1 APPPATH\Views\pesquisarpacientes.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$id', 'C:\\xampp\\htdocs\\sinteag\\app\\Views\\pesquisarpacientes.php', 50)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\sinteag\\app\\Views\\pesquisarpacientes.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('pesquisarpacientes', [], true)
+ 5 APPPATH\Controllers\PesquisarPacientes.php(20): view('pesquisarpacientes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PesquisarPacientes->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesquisarPacientes))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-19 01:20:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-19 11:16:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-19 11:16:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-19 11:16:43 --> Class "codeigniter\model" not found
+in APPPATH\Models\PacientesModel.php on line 6.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(314): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\sinteag\\app\\Models\\PacientesModel.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\PacientesModel')
+ 4 APPPATH\Controllers\PesquisarPacientes.php(16): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\PacientesModel')
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PesquisarPacientes->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesquisarPacientes))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-19 11:50:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-19 11:50:33 --> Class "codeigniter\model" not found
+in APPPATH\Models\PacientesModel.php on line 6.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(314): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\sinteag\\app\\Models\\PacientesModel.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\PacientesModel')
+ 4 APPPATH\Controllers\PesquisarPacientes.php(16): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\PacientesModel')
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PesquisarPacientes->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesquisarPacientes))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-19 11:52:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-19 11:52:03 --> Class "codeigniter\model" not found
+in APPPATH\Models\PacientesModel.php on line 6.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(314): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\sinteag\\app\\Models\\PacientesModel.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\PacientesModel')
+ 4 APPPATH\Controllers\PesquisarPacientes.php(16): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\PacientesModel')
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PesquisarPacientes->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesquisarPacientes))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-19 11:55:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-19 11:55:01 --> Class "codeigniter\model" not found
+in APPPATH\Models\PacientesModel.php on line 6.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(314): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\sinteag\\app\\Models\\PacientesModel.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\PacientesModel')
+ 4 APPPATH\Controllers\PesquisarPacientes.php(16): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\PacientesModel')
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PesquisarPacientes->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesquisarPacientes))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-19 15:42:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-19 15:42:08 --> Class "codeigniter\model" not found
+in APPPATH\Models\PacientesModel.php on line 6.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(314): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\sinteag\\app\\Models\\PacientesModel.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\PacientesModel')
+ 4 APPPATH\Controllers\PesquisarPacientes.php(16): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\PacientesModel')
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PesquisarPacientes->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesquisarPacientes))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-19 15:42:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-19 15:42:37 --> Class "codeigniter\model" not found
+in APPPATH\Models\PacientesModel.php on line 6.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(314): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\sinteag\\app\\Models\\PacientesModel.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\PacientesModel')
+ 4 APPPATH\Controllers\PesquisarPacientes.php(16): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\PacientesModel')
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PesquisarPacientes->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesquisarPacientes))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-19 22:50:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-19 22:50:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-19 22:50:39 --> Class "App\Models\Model" not found
+in APPPATH\Models\PacientesModel.php on line 6.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(314): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\sinteag\\app\\Models\\PacientesModel.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\PacientesModel')
+ 4 APPPATH\Controllers\PesquisarPacientes.php(16): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\PacientesModel')
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PesquisarPacientes->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesquisarPacientes))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-19 23:05:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-19 23:16:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-19 23:16:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-19 23:16:53 --> Class "codeigniter\model" not found
+in APPPATH\Models\PacientesModel.php on line 6.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(314): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\sinteag\\app\\Models\\PacientesModel.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\PacientesModel')
+ 4 APPPATH\Controllers\PesquisarPacientes.php(16): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\PacientesModel')
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PesquisarPacientes->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesquisarPacientes))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-19 23:18:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-19 23:18:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-19 23:18:57 --> Undefined constant "App\Controllers\CPF"
+in APPPATH\Controllers\EditarPaciente.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\EditarPaciente->index('11111111111')
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EditarPaciente))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-19 23:19:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-19 23:22:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-19 23:22:48 --> Undefined constant "App\Controllers\CPF"
+in APPPATH\Controllers\EditarPaciente.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\EditarPaciente->index('22222233344')
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EditarPaciente))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-19 23:23:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-19 23:23:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-19 23:23:58 --> Undefined constant "App\Controllers\CPF"
+in APPPATH\Controllers\EditarPaciente.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\EditarPaciente->index('22222233344')
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EditarPaciente))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-19 23:26:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-10-19 23:26:34 --> mysqli_sql_exception: Unknown column 'Sexo' in 'field list' in C:\xampp\htdocs\sinteag\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\sinteag\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT Nome_Pac...', 0)
+#1 C:\xampp\htdocs\sinteag\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT Nome_Pac...')
+#2 C:\xampp\htdocs\sinteag\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT Nome_Pac...')
+#3 C:\xampp\htdocs\sinteag\app\Controllers\EditarPaciente.php(14): CodeIgniter\Database\BaseConnection->query('SELECT Nome_Pac...')
+#4 C:\xampp\htdocs\sinteag\system\CodeIgniter.php(932): App\Controllers\EditarPaciente->index('22222233344')
+#5 C:\xampp\htdocs\sinteag\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EditarPaciente))
+#6 C:\xampp\htdocs\sinteag\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\sinteag\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-10-19 23:26:34 --> Unknown column 'Sexo' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT Nome_Paciente, CPF, Sexo, Data_Nascimento, CEP, Logradouro, Bairro, Cidade, UF, Numero, Complemento, Telefone, OBS FROM pacientes WHERE Id_Paciente = \'22222233344\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT Nome_Paciente, CPF, Sexo, Data_Nascimento, CEP, Logradouro, Bairro, Cidade, UF, Numero, Complemento, Telefone, OBS FROM pacientes WHERE Id_Paciente = \'22222233344\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT Nome_Paciente, CPF, Sexo, Data_Nascimento, CEP, Logradouro, Bairro, Cidade, UF, Numero, Complemento, Telefone, OBS FROM pacientes WHERE Id_Paciente = \'22222233344\'')
+ 4 APPPATH\Controllers\EditarPaciente.php(14): CodeIgniter\Database\BaseConnection->query('SELECT Nome_Paciente, CPF, Sexo, Data_Nascimento, CEP, Logradouro, Bairro, Cidade, UF, Numero, Complemento, Telefone, OBS FROM pacientes WHERE Id_Paciente = \'22222233344\'')
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\EditarPaciente->index('22222233344')
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EditarPaciente))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-19 23:28:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-19 23:28:10 --> Undefined variable $paciente
+in APPPATH\Views\editarpaciente.php on line 71.
+ 1 APPPATH\Views\editarpaciente.php(71): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $paciente', 'C:\\xampp\\htdocs\\sinteag\\app\\Views\\editarpaciente.php', 71)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\sinteag\\app\\Views\\editarpaciente.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('editarpaciente', [], true)
+ 5 APPPATH\Controllers\EditarPaciente.php(18): view('editarpaciente', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\EditarPaciente->index('22222233344')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EditarPaciente))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-19 23:31:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-19 23:31:32 --> Undefined variable $pesquisarpacientes
+in APPPATH\Views\editarpaciente.php on line 71.
+ 1 APPPATH\Views\editarpaciente.php(71): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pesquisarpacientes', 'C:\\xampp\\htdocs\\sinteag\\app\\Views\\editarpaciente.php', 71)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\sinteag\\app\\Views\\editarpaciente.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('editarpaciente', [], true)
+ 5 APPPATH\Controllers\EditarPaciente.php(18): view('editarpaciente', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\EditarPaciente->index('22222233344')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EditarPaciente))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-19 23:32:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-19 23:32:46 --> Undefined variable $pesquisarpacientes
+in APPPATH\Views\editarpaciente.php on line 71.
+ 1 APPPATH\Views\editarpaciente.php(71): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pesquisarpacientes', 'C:\\xampp\\htdocs\\sinteag\\app\\Views\\editarpaciente.php', 71)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\sinteag\\app\\Views\\editarpaciente.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('editarpaciente', [], true)
+ 5 APPPATH\Controllers\EditarPaciente.php(18): view('editarpaciente', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\EditarPaciente->index('22222233344')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EditarPaciente))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-19 23:33:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-19 23:33:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-19 23:33:40 --> Class "Codeigniter\Model" not found
+in APPPATH\Models\PacientesModel.php on line 6.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(314): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\sinteag\\app\\Models\\PacientesModel.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\PacientesModel')
+ 4 APPPATH\Controllers\PesquisarPacientes.php(16): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\PacientesModel')
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PesquisarPacientes->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesquisarPacientes))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-19 23:36:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-19 23:36:12 --> Attempt to read property "Nome_Paciente" on array
+in APPPATH\Views\pesquisarpacientes.php on line 31.
+ 1 APPPATH\Views\pesquisarpacientes.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "Nome_Paciente" on array', 'C:\\xampp\\htdocs\\sinteag\\app\\Views\\pesquisarpacientes.php', 31)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\sinteag\\app\\Views\\pesquisarpacientes.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('pesquisarpacientes', [], true)
+ 5 APPPATH\Controllers\PesquisarPacientes.php(20): view('pesquisarpacientes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PesquisarPacientes->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesquisarPacientes))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-19 23:37:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-19 23:37:56 --> mysqli_result::fetch_object(): Argument #1 ($class) must be a valid class name, objeto given
+in SYSTEMPATH\Database\MySQLi\Result.php on line 154.
+ 1 SYSTEMPATH\Database\MySQLi\Result.php(154): mysqli_result->fetch_object('objeto')
+ 2 SYSTEMPATH\Database\BaseResult.php(159): CodeIgniter\Database\MySQLi\Result->fetchObject('objeto')
+ 3 SYSTEMPATH\Database\BaseResult.php(114): CodeIgniter\Database\BaseResult->getCustomResultObject('objeto')
+ 4 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseResult->getResult('objeto')
+ 5 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\PesquisarPacientes.php(17): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PesquisarPacientes->index()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesquisarPacientes))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-19 23:43:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-19 23:43:30 --> Attempt to read property "Nome_Paciente" on array
+in APPPATH\Views\pesquisarpacientes.php on line 31.
+ 1 APPPATH\Views\pesquisarpacientes.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "Nome_Paciente" on array', 'C:\\xampp\\htdocs\\sinteag\\app\\Views\\pesquisarpacientes.php', 31)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\sinteag\\app\\Views\\pesquisarpacientes.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('pesquisarpacientes', [], true)
+ 5 APPPATH\Controllers\PesquisarPacientes.php(20): view('pesquisarpacientes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PesquisarPacientes->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesquisarPacientes))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-19 23:50:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-19 23:51:00 --> Attempt to read property "Nome_Paciente" on array
+in APPPATH\Views\pesquisarpacientes.php on line 31.
+ 1 APPPATH\Views\pesquisarpacientes.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "Nome_Paciente" on array', 'C:\\xampp\\htdocs\\sinteag\\app\\Views\\pesquisarpacientes.php', 31)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\sinteag\\app\\Views\\pesquisarpacientes.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('pesquisarpacientes', [], true)
+ 5 APPPATH\Controllers\PesquisarPacientes.php(20): view('pesquisarpacientes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PesquisarPacientes->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesquisarPacientes))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-19 23:54:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-19 23:55:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-19 23:55:11 --> Attempt to read property "Nome_Paciente" on array
+in APPPATH\Views\pesquisarpacientes.php on line 32.
+ 1 APPPATH\Views\pesquisarpacientes.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "Nome_Paciente" on array', 'C:\\xampp\\htdocs\\sinteag\\app\\Views\\pesquisarpacientes.php', 32)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\sinteag\\app\\Views\\pesquisarpacientes.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('pesquisarpacientes', [], true)
+ 5 APPPATH\Controllers\PesquisarPacientes.php(22): view('pesquisarpacientes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PesquisarPacientes->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesquisarPacientes))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-19 23:57:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-19 23:58:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-19 23:58:10 --> Attempt to read property "Nome_Paciente" on string
+in APPPATH\Views\pesquisarpacientes.php on line 31.
+ 1 APPPATH\Views\pesquisarpacientes.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "Nome_Paciente" on string', 'C:\\xampp\\htdocs\\sinteag\\app\\Views\\pesquisarpacientes.php', 31)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\sinteag\\app\\Views\\pesquisarpacientes.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('pesquisarpacientes', [], true)
+ 5 APPPATH\Controllers\PesquisarPacientes.php(22): view('pesquisarpacientes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PesquisarPacientes->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesquisarPacientes))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-19 23:58:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-19 23:59:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-19 23:59:16 --> Attempt to read property "Nome_Paciente" on array
+in APPPATH\Views\pesquisarpacientes.php on line 32.
+ 1 APPPATH\Views\pesquisarpacientes.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "Nome_Paciente" on array', 'C:\\xampp\\htdocs\\sinteag\\app\\Views\\pesquisarpacientes.php', 32)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\sinteag\\app\\Views\\pesquisarpacientes.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('pesquisarpacientes', [], true)
+ 5 APPPATH\Controllers\PesquisarPacientes.php(22): view('pesquisarpacientes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PesquisarPacientes->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesquisarPacientes))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-19 23:59:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-19 23:59:43 --> Attempt to read property "CPF" on array
+in APPPATH\Views\pesquisarpacientes.php on line 33.
+ 1 APPPATH\Views\pesquisarpacientes.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "CPF" on array', 'C:\\xampp\\htdocs\\sinteag\\app\\Views\\pesquisarpacientes.php', 33)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\sinteag\\app\\Views\\pesquisarpacientes.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('pesquisarpacientes', [], true)
+ 5 APPPATH\Controllers\PesquisarPacientes.php(22): view('pesquisarpacientes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PesquisarPacientes->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesquisarPacientes))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-19 22:46:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-19 22:49:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-19 22:50:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-19 22:50:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-19 22:51:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-19 22:51:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-19 22:52:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-19 22:53:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-19 22:56:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-19 22:56:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-19 23:17:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-19 23:17:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-19 23:18:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-19 23:18:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-19 23:22:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-19 23:31:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-19 23:31:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
