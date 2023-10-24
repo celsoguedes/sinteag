@@ -3,7 +3,9 @@
 namespace App\Models;
 
 use codeigniter\model;
-class MovimentocaixaModel extends Model {
+
+class MovimentocaixaModel extends Model
+{
     protected $table      = 'movimentocaixa';
     protected $primaryKey = 'Id_Caixa';
 
@@ -20,7 +22,4 @@ class MovimentocaixaModel extends Model {
     protected $createdField  = 'created_at';
     protected $updatedField  = 'updated_at';
     protected $deletedField  = 'deleted_at';
-
-
-
 }

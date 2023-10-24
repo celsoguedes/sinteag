@@ -1,53 +1,52 @@
 <?php echo $this->extend('modelos/layout'); ?>
-    
-<?php echo $this->section('conteudo');?>
+
+<?php echo $this->section('conteudo'); ?>
 <h1>Pesquisar Consultas</h1>
 
 <div class="p-3 mb-2 bg-info text-dark">
 
-<div class="row mt-3">
-    <div class="form-group col-md-3">
-          <label for="nome">Filtro:</label>
-          <input type="text" class="form-control" id="Filtro" placeholder="Filtro">
-    </div>
+  <div class="row mt-3">
     <div class="col-md-9">
-    <table class="table">
-      <thead>
-        <tr>
-          <th>Paciente</th>
-          <th>Profissional</th>
-          <th>Data</th>
-          <th>Valor</th>
-          <th>Hora</th>
-          <th>Status</th>
-        </tr>
-      
-      
-        <?php foreach ($pesquisarconsultas as $consulta): ?>
+      <table class="table" id="tabelaConsulta">
+        <thead>
           <tr>
-            <td><?php echo $consulta->paciente_id;?></td>
-            <td><?php echo $consulta->profissional_id;?></td>
-            <td><?php echo $consulta->agendamento;?></td>
-            <td><?php echo $consulta->Valor;?></td>
-            <td><?php echo $consulta->horario;?></td>
-            <td><?php echo $consulta->Status;?></td>
-
-    
-
-        <?php endforeach; ?>
+            <th>Paciente</th>
+            <th>Profissional</th>
+            <th>Data</th>
+            <th>Valor</th>
+            <th>Hora</th>
+            <th>Status</th>
+            <th></th>
+            <th></th>
           </tr>
-      </tbody>
-    </table>
+
+
+          <?php foreach ($pesquisarconsultas as $key => $consulta) : ?>
+            <tr>
+              <td><?php echo $consulta['Nome_Paciente']; ?></td>
+              <td><?php echo $consulta['Nome_Profissional']; ?></td>
+              <td><?php echo $consulta['agendamento']; ?></td>
+              <td><?php echo $consulta['Valor']; ?></td>
+              <td><?php echo $consulta['horario']; ?></td>
+              <td><?php echo $consulta['Estado']; ?></td>
+              <td><a class="btn btn-primary" href="/sinteag/public/EditarConsulta/<?php echo $consulta['Id_Agendamento']; ?>"><i class="bi bi-pencil-square"></i></a></td>
+              <td><a class="btn btn-danger" href="/sinteag/public/ExcluirConsulta/<?php echo $consulta['Id_Agendamento']; ?>"><i class="bi bi-trash"></i></a></td>
+
+
+            <?php endforeach; ?>
+            </tr>
+            </tbody>
+      </table>
+    </div>
   </div>
-</div>
-<button type="submit" class="btn btn-primary">Editar</button>
 
-<?php echo $this->endSection();?>
 
-<?php echo $this->section('scripts');?>
+  <?php echo $this->endSection(); ?>
 
-<script>
-    
-</script>
+  <?php echo $this->section('scripts'); ?>
 
-<?php echo $this->endSection();?>
+  <script>
+    new DataTable('#tabelaConsulta');
+  </script>
+
+  <?php echo $this->endSection(); ?>

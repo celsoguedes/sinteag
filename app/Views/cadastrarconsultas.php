@@ -1,8 +1,8 @@
 <?php echo $this->extend('modelos/layout'); ?>
-    
-<?php echo $this->section('conteudo');?>
+
+<?php echo $this->section('conteudo'); ?>
 <div class="p-3 mb-2 bg-info text-dark">
-<div class="container">
+    <div class="container">
         <h1>Cadastro de Consulta</h1>
         <form>
             <div class="form-group col-md-6">
@@ -14,10 +14,10 @@
                 <input type="text" class="form-control" id="profissional">
             </div>
             <div class="form-group col-md-1">
-            <label for="cars">Tipo de Consulta:</label>
+                <label for="cars">Tipo de Consulta:</label>
                 <select name="tipoConsulta" id="tipoConsulta">
-                <option value="consultorio">Consultório</option>
-                <option value="residencia">Residência</option>
+                    <option value="consultorio">Consultório</option>
+                    <option value="residencia">Residência</option>
                 </select>
             </div>
             <div class="form-group col-md-2">
@@ -33,22 +33,22 @@
                 <input type="time" class="form-control" id="horario">
             </div>
             <div class="form-group col-md-2">
-            <label for="consulta">Status da Consulta:</label>
+                <label for="consulta">Status da Consulta:</label>
                 <select name="tipoConsulta" id="tipoConsulta">
-                <option value="aguardando">Aguardando</option>
-                <option value="realizada">Realizada</option>
+                    <option value="aguardando">Aguardando</option>
+                    <option value="realizada">Realizada</option>
                 </select>
             </div>
             <button type="submit" class="btn btn-primary">Enviar</button>
         </form>
     </div>
 </div>
-<?php echo $this->endSection();?>
+<?php echo $this->endSection(); ?>
 
-<?php echo $this->section('scripts');?>
+<?php echo $this->section('scripts'); ?>
 
 <script>
-    
+
 </script>
 
-<?php echo $this->endSection();?>
+<?php echo $this->endSection(); ?>

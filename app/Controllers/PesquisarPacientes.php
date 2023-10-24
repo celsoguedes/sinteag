@@ -3,6 +3,7 @@
 namespace App\Controllers;
 
 use App\Models\PacientesModel;
+
 class PesquisarPacientes extends BaseController
 {
     //public function index(): string
@@ -19,7 +20,7 @@ class PesquisarPacientes extends BaseController
         //Aí tu ja usa esse modelo pra todas as consultas que tá feito.
 
 
-        $data = ['titulo' => 'Pesquisar Pacientes','pesquisarpacientes' => $resultado];
-        return view('pesquisarpacientes', $data);              
+        $data = ['titulo' => 'Pesquisar Pacientes', 'pesquisarpacientes' => $resultado];
+        return view('pesquisarpacientes', $data);
     }
-} 
+}

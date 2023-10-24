@@ -2,17 +2,19 @@
 
 namespace App\Models;
 
-use codeigniter\model;
-class AgendamentosModel extends Model {
+use CodeIgniter\model;
+
+class AgendamentosModel extends Model
+{
     protected $table      = 'agendamentos';
-    protected $primaryKey = 'Id_agendamento';
+    protected $primaryKey = 'Id_Agendamento';
 
     protected $useAutoIncrement = true;
 
     protected $returnType     = 'array'; //objeto
-    protected $useSoftDeletes = true;
+    protected $useSoftDeletes = false;
 
-    protected $allowedFields = ['paciente_id', 'profissional_id', 'Tipo_Consulta', 'Valor', 'Agendamento', 'Horario', 'Status'];
+    protected $allowedFields = ['paciente_id', 'profissional_id', 'Tipo_Consulta', 'Valor', 'Agendamento', 'Horario', 'Estado'];
 
     // Dates
     protected $useTimestamps = false;
@@ -20,7 +22,4 @@ class AgendamentosModel extends Model {
     protected $createdField  = 'created_at';
     protected $updatedField  = 'updated_at';
     protected $deletedField  = 'deleted_at';
-
-
-
 }

@@ -3,7 +3,9 @@
 namespace App\Models;
 
 use codeigniter\model;
-class UsuariosModel extends Model {
+
+class UsuariosModel extends Model
+{
     protected $table      = 'usuarios';
     protected $primaryKey = 'Id_Usuario';
 
@@ -20,7 +22,4 @@ class UsuariosModel extends Model {
     protected $createdField  = 'created_at';
     protected $updatedField  = 'updated_at';
     protected $deletedField  = 'deleted_at';
-
-
-
 }

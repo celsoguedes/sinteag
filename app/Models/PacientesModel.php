@@ -3,7 +3,9 @@
 namespace App\Models;
 
 use CodeIgniter\Model;
-class PacientesModel extends Model {
+
+class PacientesModel extends Model
+{
     protected $table      = 'pacientes';
     protected $primaryKey = 'Id_Paciente';
 
@@ -19,5 +21,5 @@ class PacientesModel extends Model {
     protected $dateFormat    = 'date';
     protected $createdField  = 'created_at';
     protected $updatedField  = 'updated_at';
-    protected $deletedField  = 'deleted_at'; 
+    protected $deletedField  = 'deleted_at';
 }

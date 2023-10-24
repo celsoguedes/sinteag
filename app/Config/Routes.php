@@ -35,15 +35,20 @@ $routes->get('/CadastrarPacientes','CadastrarPacientes::index');
 $routes->get('/CadastrarProfissionais','CadastrarProfissionais::index');
 $routes->get('/CadastrarUsuarios', 'CadastrarUsuarios');
 $routes->get('/CadastrarConsultas', 'CadastrarConsultas');
-$routes->get('/EditarConsulta', 'EditarConsulta');
+$routes->get('/EditarConsulta/(:any)', 'EditarConsulta::index/$1');
+$routes->post('/EditarConsulta/atualizar/(:any)', 'EditarConsulta::atualizar/$1');
 $routes->get('/EditarPaciente/(:any)', 'EditarPaciente::index/$1');
+$routes->post('/EditarPaciente/atualizar/(:any)', 'EditarPaciente::atualizar/$1');
 $routes->get('/EditarProfissional/(:any)', 'EditarProfissional::index/$1');
-$routes->get('/PesquisarPacientes', 'PesquisarPacientes');
+$routes->post('/EditarProfissional/atualizar/(:any)', 'EditarProfissional::atualizar/$1');
+$routes->get('/PesquisarPacientes', 'PesquisarPacientes::index');
 $routes->get('/PesquisarProfissionais', 'PesquisarProfissionais');
 $routes->get('/PesquisarConsultas', 'PesquisarConsultas');
-$routes->get('/AgendaDoDia', 'AgendaDoDia');
 $routes->get('/MovimentoCaixa', 'MovimentoCaixa');
 $routes->get('/RelatorioDeCaixa', 'RelatorioDeCaixa');
+$routes->post('/CadastrarProfissionais/cadastrar','CadastrarProfissionais::cadastrar');
+$routes->post('/CadastrarPacientes/cadastrar','CadastrarPacientes::cadastrar');
+$routes->post('/CadastrarUsuarios/cadastrar','CadastrarUsuarios::cadastrar');
 
 
 
