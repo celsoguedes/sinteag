@@ -53,7 +53,7 @@ class EditarProfissional extends BaseController
             'UF' => $uf,
             'Numero' => $numero,
             'Complemento' => $complemento,
-            'Telefone' => $telefone,            
+            'Telefone' => $telefone,
         ];
         $db->table('profissional')->where('Id_Profissional', $id)->update($data);
     }

@@ -30,7 +30,7 @@ class EditarConsulta extends BaseController
         $horario = $_POST['horario'];
         $estado = $_POST['estado'];
 
-        
+
 
         $db = \config\Database::connect();
 
@@ -39,12 +39,12 @@ class EditarConsulta extends BaseController
             'Nome_Profissional' => $nomeProfissional,
             'Tipo_Consulta' => $tipoConsulta,
             'Valor' => $valor,
-            'Agendamento'=> $agendamento,
+            'Agendamento' => $agendamento,
             'Horario' => $horario,
             'estado' => $estado,
 
         ];
-    
+
         $db->table('pacientes')->where('Id_Agendamento', $id)->update($data);
     }
 }

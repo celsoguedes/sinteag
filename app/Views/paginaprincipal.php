@@ -16,17 +16,16 @@
             <th>Profissional</th>
             <th>Telefone</th>
           </tr>
-          
+
           <?php foreach ($home as $key => $home) : ?>
             <tr>
               <td><?php echo $home['Nome_Paciente']; ?></td>
               <td><?php echo $home['horario']; ?></td>
               <td><?php echo $home['Nome_Profissional']; ?></td>
               <td><?php echo $home['Telefone']; ?></td>
-     
             <?php endforeach; ?>
 
-          </tbody>
+            </tbody>
       </table>
     </div>
   </div>

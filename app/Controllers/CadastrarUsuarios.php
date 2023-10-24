@@ -19,11 +19,11 @@ class CadastrarUsuarios extends BaseController
 
     public function cadastrar()
     {
-    
+
 
         print_r($_POST);
 
-        $usuario= $_POST['nome_usuario'];
+        $usuario = $_POST['nome_usuario'];
         $login = $_POST['login'];
         $senha = $_POST['senha'];
 
@@ -34,12 +34,10 @@ class CadastrarUsuarios extends BaseController
             'Usuario' => $usuario,
             'login' => $login,
             'senha' => $senha,
-            
+
         ];
-    
+
         $db->table('usuarios')->insert($data); //qualquer coisa grita que eu volto.b3z
         return redirect()->to('/public/Home');
     }
-
-
 }

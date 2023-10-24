@@ -407,3 +407,334 @@ INFO - 2023-10-24 03:33:29 --> Session: Class initialized using 'CodeIgniter\Ses
 INFO - 2023-10-24 03:37:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2023-10-24 03:37:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2023-10-24 03:41:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 12:36:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 12:55:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 12:55:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 12:57:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 12:58:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-24 12:58:52 --> Undefined array key "Id_Paciente"
+in APPPATH\Views\paginaprincipal.php on line 28.
+ 1 APPPATH\Views\paginaprincipal.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Id_Paciente"', 'C:\\xampp\\htdocs\\sinteag\\app\\Views\\paginaprincipal.php', 28)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\sinteag\\app\\Views\\paginaprincipal.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('paginaprincipal', [], true)
+ 5 APPPATH\Controllers\Home.php(24): view('paginaprincipal', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-24 12:59:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-24 12:59:29 --> Undefined array key "Id_Agendamento"
+in APPPATH\Views\paginaprincipal.php on line 28.
+ 1 APPPATH\Views\paginaprincipal.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Id_Agendamento"', 'C:\\xampp\\htdocs\\sinteag\\app\\Views\\paginaprincipal.php', 28)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\sinteag\\app\\Views\\paginaprincipal.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('paginaprincipal', [], true)
+ 5 APPPATH\Controllers\Home.php(24): view('paginaprincipal', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-24 13:04:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-10-24 13:04:53 --> mysqli_sql_exception: Unknown column 'a.Id_agenadamento' in 'field list' in C:\xampp\htdocs\sinteag\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\sinteag\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT a.Id_age...', 0)
+#1 C:\xampp\htdocs\sinteag\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT a.Id_age...')
+#2 C:\xampp\htdocs\sinteag\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT a.Id_age...')
+#3 C:\xampp\htdocs\sinteag\app\Controllers\Home.php(11): CodeIgniter\Database\BaseConnection->query('SELECT a.Id_age...')
+#4 C:\xampp\htdocs\sinteag\system\CodeIgniter.php(932): App\Controllers\Home->index()
+#5 C:\xampp\htdocs\sinteag\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\sinteag\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\sinteag\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-10-24 13:04:53 --> Unknown column 'a.Id_agenadamento' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT a.Id_agenadamento, p.Nome_Paciente, p.Telefone, pro.Nome_Profissional,a.horario FROM `agendamentos` a,pacientes p, profissional pro WHERE a.paciente_id = Id_Paciente AND a.profissional_id = pro.Id_Profissional AND agendamento = CONVERT(NOW(),DATE);', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT a.Id_agenadamento, p.Nome_Paciente, p.Telefone, pro.Nome_Profissional,a.horario FROM `agendamentos` a,pacientes p, profissional pro WHERE a.paciente_id = Id_Paciente AND a.profissional_id = pro.Id_Profissional AND agendamento = CONVERT(NOW(),DATE);')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT a.Id_agenadamento, p.Nome_Paciente, p.Telefone, pro.Nome_Profissional,a.horario FROM `agendamentos` a,pacientes p, profissional pro WHERE a.paciente_id = Id_Paciente AND a.profissional_id = pro.Id_Profissional AND agendamento = CONVERT(NOW(),DATE);')
+ 4 APPPATH\Controllers\Home.php(11): CodeIgniter\Database\BaseConnection->query('SELECT a.Id_agenadamento, p.Nome_Paciente, p.Telefone, pro.Nome_Profissional,a.horario FROM `agendamentos` a,pacientes p, profissional pro WHERE a.paciente_id = Id_Paciente AND a.profissional_id = pro.Id_Profissional AND agendamento = CONVERT(NOW(),DATE);')
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-24 13:05:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-24 13:05:12 --> Undefined array key "Id_Agendamento"
+in APPPATH\Views\paginaprincipal.php on line 28.
+ 1 APPPATH\Views\paginaprincipal.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Id_Agendamento"', 'C:\\xampp\\htdocs\\sinteag\\app\\Views\\paginaprincipal.php', 28)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\sinteag\\app\\Views\\paginaprincipal.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('paginaprincipal', [], true)
+ 5 APPPATH\Controllers\Home.php(24): view('paginaprincipal', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-24 13:08:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-24 13:08:16 --> Undefined array key "Id_Agendamento"
+in APPPATH\Views\paginaprincipal.php on line 28.
+ 1 APPPATH\Views\paginaprincipal.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Id_Agendamento"', 'C:\\xampp\\htdocs\\sinteag\\app\\Views\\paginaprincipal.php', 28)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\sinteag\\app\\Views\\paginaprincipal.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('paginaprincipal', [], true)
+ 5 APPPATH\Controllers\Home.php(26): view('paginaprincipal', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-24 13:10:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-24 13:10:01 --> Undefined variable $consulta
+in APPPATH\Views\paginaprincipal.php on line 28.
+ 1 APPPATH\Views\paginaprincipal.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $consulta', 'C:\\xampp\\htdocs\\sinteag\\app\\Views\\paginaprincipal.php', 28)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\sinteag\\app\\Views\\paginaprincipal.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('paginaprincipal', [], true)
+ 5 APPPATH\Controllers\Home.php(26): view('paginaprincipal', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-24 13:10:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-24 13:10:42 --> Undefined array key "Id_Agendamento"
+in APPPATH\Views\paginaprincipal.php on line 28.
+ 1 APPPATH\Views\paginaprincipal.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Id_Agendamento"', 'C:\\xampp\\htdocs\\sinteag\\app\\Views\\paginaprincipal.php', 28)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\sinteag\\app\\Views\\paginaprincipal.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('paginaprincipal', [], true)
+ 5 APPPATH\Controllers\Home.php(26): view('paginaprincipal', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-24 13:13:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 14:22:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 14:49:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 14:49:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 14:55:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 14:55:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 15:00:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 15:01:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 15:01:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 15:02:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 15:05:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 15:06:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 15:07:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 15:17:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 16:03:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 18:46:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 18:58:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 18:58:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 19:14:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 19:14:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 19:54:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 20:03:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 20:03:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 20:07:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 20:07:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-24 20:07:22 --> Undefined variable $pesquisarpacientes
+in APPPATH\Views\cadastrarconsultas.php on line 14.
+ 1 APPPATH\Views\cadastrarconsultas.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pesquisarpacientes', 'C:\\xampp\\htdocs\\sinteag\\app\\Views\\cadastrarconsultas.php', 14)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\sinteag\\app\\Views\\cadastrarconsultas.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('cadastrarconsultas', [], true)
+ 5 APPPATH\Controllers\CadastrarConsultas.php(17): view('cadastrarconsultas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CadastrarConsultas->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CadastrarConsultas))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-24 20:12:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-24 20:12:02 --> Undefined variable $pesquisarpacientes
+in APPPATH\Views\cadastrarconsultas.php on line 14.
+ 1 APPPATH\Views\cadastrarconsultas.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pesquisarpacientes', 'C:\\xampp\\htdocs\\sinteag\\app\\Views\\cadastrarconsultas.php', 14)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\sinteag\\app\\Views\\cadastrarconsultas.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('cadastrarconsultas', [], true)
+ 5 APPPATH\Controllers\CadastrarConsultas.php(19): view('cadastrarconsultas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CadastrarConsultas->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CadastrarConsultas))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-24 20:13:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-24 20:13:27 --> Undefined variable $pesquisarpacientes
+in APPPATH\Views\cadastrarconsultas.php on line 14.
+ 1 APPPATH\Views\cadastrarconsultas.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pesquisarpacientes', 'C:\\xampp\\htdocs\\sinteag\\app\\Views\\cadastrarconsultas.php', 14)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\sinteag\\app\\Views\\cadastrarconsultas.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('cadastrarconsultas', [], true)
+ 5 APPPATH\Controllers\CadastrarConsultas.php(19): view('cadastrarconsultas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CadastrarConsultas->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CadastrarConsultas))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-24 20:14:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-24 20:14:34 --> Undefined variable $agendamentosModel
+in APPPATH\Views\cadastrarconsultas.php on line 14.
+ 1 APPPATH\Views\cadastrarconsultas.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $agendamentosModel', 'C:\\xampp\\htdocs\\sinteag\\app\\Views\\cadastrarconsultas.php', 14)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\sinteag\\app\\Views\\cadastrarconsultas.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('cadastrarconsultas', [], true)
+ 5 APPPATH\Controllers\CadastrarConsultas.php(19): view('cadastrarconsultas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CadastrarConsultas->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CadastrarConsultas))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-24 20:15:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-24 20:15:26 --> Undefined variable $agendamentosModel
+in APPPATH\Views\cadastrarconsultas.php on line 14.
+ 1 APPPATH\Views\cadastrarconsultas.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $agendamentosModel', 'C:\\xampp\\htdocs\\sinteag\\app\\Views\\cadastrarconsultas.php', 14)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\sinteag\\app\\Views\\cadastrarconsultas.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('cadastrarconsultas', [], true)
+ 5 APPPATH\Controllers\CadastrarConsultas.php(19): view('cadastrarconsultas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CadastrarConsultas->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CadastrarConsultas))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-24 20:16:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 20:21:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 20:36:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-24 20:36:13 --> Undefined variable $pesquisarconsultas
+in APPPATH\Views\cadastrarconsultas.php on line 14.
+ 1 APPPATH\Views\cadastrarconsultas.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pesquisarconsultas', 'C:\\xampp\\htdocs\\sinteag\\app\\Views\\cadastrarconsultas.php', 14)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\sinteag\\app\\Views\\cadastrarconsultas.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('cadastrarconsultas', [], true)
+ 5 APPPATH\Controllers\CadastrarConsultas.php(19): view('cadastrarconsultas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CadastrarConsultas->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CadastrarConsultas))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-24 20:37:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-24 20:37:58 --> Undefined variable $cadastrarconsultas
+in APPPATH\Views\cadastrarconsultas.php on line 14.
+ 1 APPPATH\Views\cadastrarconsultas.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cadastrarconsultas', 'C:\\xampp\\htdocs\\sinteag\\app\\Views\\cadastrarconsultas.php', 14)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\sinteag\\app\\Views\\cadastrarconsultas.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('cadastrarconsultas', [], true)
+ 5 APPPATH\Controllers\CadastrarConsultas.php(19): view('cadastrarconsultas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CadastrarConsultas->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CadastrarConsultas))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-24 20:39:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-24 20:39:21 --> Undefined variable $cadastrarconsultas
+in APPPATH\Views\cadastrarconsultas.php on line 14.
+ 1 APPPATH\Views\cadastrarconsultas.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cadastrarconsultas', 'C:\\xampp\\htdocs\\sinteag\\app\\Views\\cadastrarconsultas.php', 14)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\sinteag\\app\\Views\\cadastrarconsultas.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('cadastrarconsultas', [], true)
+ 5 APPPATH\Controllers\CadastrarConsultas.php(19): view('cadastrarconsultas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CadastrarConsultas->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CadastrarConsultas))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-24 20:41:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-24 20:41:43 --> Undefined variable $cadastrarconsultas
+in APPPATH\Views\cadastrarconsultas.php on line 14.
+ 1 APPPATH\Views\cadastrarconsultas.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cadastrarconsultas', 'C:\\xampp\\htdocs\\sinteag\\app\\Views\\cadastrarconsultas.php', 14)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\sinteag\\app\\Views\\cadastrarconsultas.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('cadastrarconsultas', [], true)
+ 5 APPPATH\Controllers\CadastrarConsultas.php(19): view('cadastrarconsultas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CadastrarConsultas->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CadastrarConsultas))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-24 20:41:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-24 20:41:45 --> Undefined variable $cadastrarconsultas
+in APPPATH\Views\cadastrarconsultas.php on line 14.
+ 1 APPPATH\Views\cadastrarconsultas.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cadastrarconsultas', 'C:\\xampp\\htdocs\\sinteag\\app\\Views\\cadastrarconsultas.php', 14)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\sinteag\\app\\Views\\cadastrarconsultas.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('cadastrarconsultas', [], true)
+ 5 APPPATH\Controllers\CadastrarConsultas.php(19): view('cadastrarconsultas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CadastrarConsultas->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CadastrarConsultas))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-24 20:49:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-24 20:49:17 --> Undefined variable $agendamentosModel
+in APPPATH\Views\cadastrarconsultas.php on line 14.
+ 1 APPPATH\Views\cadastrarconsultas.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $agendamentosModel', 'C:\\xampp\\htdocs\\sinteag\\app\\Views\\cadastrarconsultas.php', 14)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\sinteag\\app\\Views\\cadastrarconsultas.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('cadastrarconsultas', [], true)
+ 5 APPPATH\Controllers\CadastrarConsultas.php(19): view('cadastrarconsultas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CadastrarConsultas->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CadastrarConsultas))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-24 20:55:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-24 20:55:49 --> Undefined variable $pesquisarpacientes
+in APPPATH\Views\cadastrarconsultas.php on line 14.
+ 1 APPPATH\Views\cadastrarconsultas.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pesquisarpacientes', 'C:\\xampp\\htdocs\\sinteag\\app\\Views\\cadastrarconsultas.php', 14)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\sinteag\\app\\Views\\cadastrarconsultas.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('cadastrarconsultas', [], true)
+ 5 APPPATH\Controllers\CadastrarConsultas.php(20): view('cadastrarconsultas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CadastrarConsultas->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CadastrarConsultas))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-24 21:07:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 21:07:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 21:07:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 21:11:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 21:21:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 21:22:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 21:35:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 21:36:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 21:38:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 21:38:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 21:41:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-24 21:41:56 --> Attempt to read property "Id_Paciente" on array
+in APPPATH\Views\cadastrarconsultas.php on line 17.
+ 1 APPPATH\Views\cadastrarconsultas.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "Id_Paciente" on array', 'C:\\xampp\\htdocs\\sinteag\\app\\Views\\cadastrarconsultas.php', 17)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\sinteag\\app\\Views\\cadastrarconsultas.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('cadastrarconsultas', [], true)
+ 5 APPPATH\Controllers\CadastrarConsultas.php(29): view('cadastrarconsultas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CadastrarConsultas->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CadastrarConsultas))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-24 21:42:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 21:43:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 21:44:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 21:45:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 21:46:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 21:48:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 21:49:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 21:49:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 21:52:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-24 21:52:13 --> Undefined array key "cpf"
+in APPPATH\Controllers\CadastrarPacientes.php on line 30.
+ 1 APPPATH\Controllers\CadastrarPacientes.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "cpf"', 'C:\\xampp\\htdocs\\sinteag\\app\\Controllers\\CadastrarPacientes.php', 30)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CadastrarPacientes->cadastrar()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CadastrarPacientes))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-24 21:52:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 21:52:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 21:52:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 21:52:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 21:52:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 21:52:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 21:54:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 21:55:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 21:55:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 21:55:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 21:55:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 22:01:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 22:01:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 22:02:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 22:02:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 22:02:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 22:05:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 22:05:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 22:05:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 22:05:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 22:05:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 22:05:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 22:05:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 22:08:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-24 22:16:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

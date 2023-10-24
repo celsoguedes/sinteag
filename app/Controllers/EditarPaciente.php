@@ -55,7 +55,7 @@ class EditarPaciente extends BaseController
             'Telefone' => $telefone,
             'OBS' => $observacoes,
         ];
-    
+
         $db->table('pacientes')->where('Id_Paciente', $id)->update($data); //qualquer coisa grita que eu volto.b3z
 
         $query = $this->db->query("SELECT Id_Paciente, Nome_Paciente, CPF, Data_Nascimento, CEP, Logradouro, Bairro, Cidade, UF, Numero, Complemento, Telefone, OBS FROM pacientes WHERE Id_Paciente = '" . $id . "'");

@@ -25,7 +25,6 @@
             <li><a class="dropdown-item" href="PesquisarPacientes">Pacientes</a></li>
             <li><a class="dropdown-item" href="PesquisarProfissionais">Profissionais</a></li>
             <li><a class="dropdown-item" href="PesquisarConsultas">Consultas</a></li>
-            <li><a class="dropdown-item" href="AgendaDoDia">Agenda do dia</a></li>
           </ul>
         </li>
         <li class="nav-item dropdown">

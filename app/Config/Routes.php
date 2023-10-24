@@ -32,9 +32,13 @@ $routes->set404Override();
 $routes->get('/Login', 'Login');
 $routes->get('/Home', 'Home::index');
 $routes->get('/CadastrarPacientes','CadastrarPacientes::index');
+$routes->post('/CadastrarPacientes/cadastrar','CadastrarPacientes::cadastrar');
 $routes->get('/CadastrarProfissionais','CadastrarProfissionais::index');
+$routes->post('/CadastrarProfissionais/cadastrar','CadastrarProfissionais::cadastrar');
 $routes->get('/CadastrarUsuarios', 'CadastrarUsuarios');
-$routes->get('/CadastrarConsultas', 'CadastrarConsultas');
+$routes->post('/CadastrarUsuarios/cadastrar','CadastrarUsuarios::cadastrar');
+$routes->get('/CadastrarConsultas', 'CadastrarConsultas::index');
+$routes->post('/CadastrarConsultas/cadastrar', 'CadastrarConsultas::cadastrar');
 $routes->get('/EditarConsulta/(:any)', 'EditarConsulta::index/$1');
 $routes->post('/EditarConsulta/atualizar/(:any)', 'EditarConsulta::atualizar/$1');
 $routes->get('/EditarPaciente/(:any)', 'EditarPaciente::index/$1');
@@ -46,9 +50,11 @@ $routes->get('/PesquisarProfissionais', 'PesquisarProfissionais');
 $routes->get('/PesquisarConsultas', 'PesquisarConsultas');
 $routes->get('/MovimentoCaixa', 'MovimentoCaixa');
 $routes->get('/RelatorioDeCaixa', 'RelatorioDeCaixa');
-$routes->post('/CadastrarProfissionais/cadastrar','CadastrarProfissionais::cadastrar');
-$routes->post('/CadastrarPacientes/cadastrar','CadastrarPacientes::cadastrar');
-$routes->post('/CadastrarUsuarios/cadastrar','CadastrarUsuarios::cadastrar');
+
+
+
+
+
 
 
 

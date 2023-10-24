@@ -5,7 +5,6 @@
   <div class="container">
     <h1>Cadastro de Paciente </h1>
     <form action="/sinteag/public/CadastrarPacientes/cadastrar" method="POST">
-      
       <div class="form-row">
         <div class="form-group col-md-6">
           <label for="nome">Nome:</label>

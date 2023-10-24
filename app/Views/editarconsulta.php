@@ -4,7 +4,7 @@
 <div class="p-3 mb-2 bg-info text-dark">
     <div class="container">
         <h1>Editar Consulta</h1>
-        <form method= "post" action="atualizar/<?php $editarconsulta['Id_Agendamento']; ?>">
+        <form method="post" action="atualizar/<?php $editarconsulta['Id_Agendamento']; ?>">
             <div class="form-group col-md-6">
                 <label for="paciente">Paciente:</label>
                 <input type="text" class="form-control" id="nomepaciente" name="nomepaciente" value="<?php echo $editarconsulta['Nome_Paciente']; ?>">

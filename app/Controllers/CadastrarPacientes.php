@@ -23,7 +23,6 @@ class CadastrarPacientes extends BaseController
 
     public function cadastrar()
     {
-    
 
         print_r($_POST);
 
@@ -56,10 +55,8 @@ class CadastrarPacientes extends BaseController
             'Telefone' => $telefone,
             'OBS' => $observacoes,
         ];
-    
-        $db->table('pacientes')->insert($data); //qualquer coisa grita que eu volto.b3z
+
+        $db->table('pacientes')->insert($data);
         return redirect()->to('/public/PesquisarPacientes');
     }
-
-
 }
