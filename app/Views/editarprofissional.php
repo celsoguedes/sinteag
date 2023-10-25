@@ -4,7 +4,7 @@
 <div class="p-3 mb-2 bg-info text-dark">
   <div class="container">
     <h1>Editar Profissional</h1>
-    <form method="post" action="atualizar/<?php echo $editarprofissional['Id_Profissional']; ?>">
+    <form method="post" action="/sinteag/public/EditarProfissional/atualizar/<?php echo $editarprofissional['Id_Profissional']; ?>">
       <div class="form-row">
         <div class="form-group col-md-6">
           <label for="nome">Nome:</label>

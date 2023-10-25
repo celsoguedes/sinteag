@@ -30,8 +30,10 @@ class CadastrarConsultas extends BaseController
     }
     public function cadastrar()
     {
-
+    
         $db = \config\Database::connect();
+
+
 
         $data = [
             'paciente_id' => $_POST['Id_Paciente'],

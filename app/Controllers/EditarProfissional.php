@@ -56,5 +56,17 @@ class EditarProfissional extends BaseController
             'Telefone' => $telefone,
         ];
         $db->table('profissional')->where('Id_Profissional', $id)->update($data);
+        return redirect()->to('/public/PesquisarProfissionais');
     }
+    public function excluir($id)
+    {
+        $db = \config\Database::connect();
+
+        $db->table('profissional')->where('Id_Profissional', $id)->delete(); //qualquer coisa grita que eu volto.b3z
+
+        //$query = $this->db->query("SELECT Id_Paciente, Nome_Paciente, CPF, Data_Nascimento, CEP, Logradouro, Bairro, Cidade, UF, Numero, Complemento, Telefone, OBS FROM pacientes WHERE Id_Paciente = '" . $id . "'");
+        //$resultado = $query->getRowArray();
+
+        return redirect()->to('/public/PesquisarProfissionais');
+    }   
 }

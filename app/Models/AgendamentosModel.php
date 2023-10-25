@@ -14,7 +14,7 @@ class AgendamentosModel extends Model
     protected $returnType     = 'array'; //objeto
     protected $useSoftDeletes = false;
 
-    protected $allowedFields = ['paciente_id', 'profissional_id', 'Tipo_Consulta', 'Valor', 'Agendamento', 'Horario', 'Estado'];
+    protected $allowedFields = ['paciente_id', 'profissional_id', 'Tipo_Consulta', 'Valor', 'agendamento', 'horario', 'Estado'];
 
     // Dates
     protected $useTimestamps = false;

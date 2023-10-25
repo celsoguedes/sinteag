@@ -1,7 +1,8 @@
 <?php
 
 namespace App\Controllers;
-
+use App\Models\AgendamentosModel;
+use App\Models\PacientesModel;
 class EditarPaciente extends BaseController
 
 {
@@ -15,7 +16,9 @@ class EditarPaciente extends BaseController
 
     public function index($id): string
     {
-        $query = $this->db->query("SELECT Id_Paciente, Nome_Paciente, CPF, Data_Nascimento, CEP, Logradouro, Bairro, Cidade, UF, Numero, Complemento, Telefone, OBS FROM pacientes WHERE Id_Paciente = '" . $id . "'");
+        $query = $this->db->query("SELECT Id_Paciente, Nome_Paciente, CPF, Data_Nascimento, CEP, Logradouro, Bairro, Cidade, UF, Numero, Complemento, Telefone, OBS 
+        FROM pacientes 
+        WHERE Id_Paciente = '" . $id . "'");
         $resultado = $query->getRowArray();
 
         $data = ['titulo' => 'Editar Paciente', 'editarpacientes' => $resultado];
@@ -58,9 +61,22 @@ class EditarPaciente extends BaseController
 
         $db->table('pacientes')->where('Id_Paciente', $id)->update($data); //qualquer coisa grita que eu volto.b3z
 
-        $query = $this->db->query("SELECT Id_Paciente, Nome_Paciente, CPF, Data_Nascimento, CEP, Logradouro, Bairro, Cidade, UF, Numero, Complemento, Telefone, OBS FROM pacientes WHERE Id_Paciente = '" . $id . "'");
-        $resultado = $query->getRowArray();
+        //$query = $this->db->query("SELECT Id_Paciente, Nome_Paciente, CPF, Data_Nascimento, CEP, Logradouro, Bairro, Cidade, UF, Numero, Complemento, Telefone, OBS FROM pacientes WHERE Id_Paciente = '" . $id . "'");
+        //$resultado = $query->getRowArray();
 
         return redirect()->to('/public/PesquisarPacientes');
-    }
+    }   
+
+    public function excluir($id)
+    {
+        $db = \config\Database::connect();
+
+        $db->table('pacientes')->where('Id_Paciente', $id)->delete(); //qualquer coisa grita que eu volto.b3z
+
+        //$query = $this->db->query("SELECT Id_Paciente, Nome_Paciente, CPF, Data_Nascimento, CEP, Logradouro, Bairro, Cidade, UF, Numero, Complemento, Telefone, OBS FROM pacientes WHERE Id_Paciente = '" . $id . "'");
+        //$resultado = $query->getRowArray();
+
+        return redirect()->to('/public/PesquisarPacientes');
+    }   
 }
+

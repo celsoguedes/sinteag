@@ -6,7 +6,7 @@ d($this->data);
 <div class="p-3 mb-2 bg-info text-dark">
   <div class="container">
     <h1>Editar Paciente</h1>
-    <form method="post" action="atualizar/<?php echo $editarpacientes['Id_Paciente']; ?>">
+    <form method="post" action="/sinteag/public/EditarPaciente/atualizar/<?php echo $editarpacientes['Id_Paciente']; ?>">
       <div class="form-row">
         <div class="form-group col-md-6">
           <label for="nome">Nome:</label>

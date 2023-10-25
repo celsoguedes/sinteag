@@ -28,8 +28,8 @@
                   ?></td>
               <td><?php echo $paciente['CPF']; ?></td>
               <td><?php echo $paciente['Telefone']; ?></td>
-              <td><a class="btn btn-primary" href="/sinteag/public/EditarPaciente/<?php echo $paciente['Id_Paciente']; ?>"><i class="bi bi-pencil-square"></i></a></td>
-              <td><a class="btn btn-danger" href="/sinteag/public/ExcluirPaciente/<?php echo $paciente['Id_Paciente']; ?>"><i class="bi bi-trash"></i></a></td>
+              <td><a class="btn btn-primary" href="/sinteag/public/EditarPaciente/index/<?php echo $paciente['Id_Paciente']; ?>"><i class="bi bi-pencil-square"></i></a></td>
+              <td><a class="btn btn-danger" href="/sinteag/public/EditarPaciente/excluir/<?php echo $paciente['Id_Paciente']; ?>"><i class="bi bi-trash"></i></a></td>
             <?php endforeach; ?>
             </tr>
         </tbody>
