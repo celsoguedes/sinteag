@@ -19,8 +19,11 @@ class PesquisarPacientes extends BaseController
         //$resultado é um vetor, aí temos que ler como chave=>valor .. lá no foreach
         //Aí tu ja usa esse modelo pra todas as consultas que tá feito.
 
-
-        $data = ['titulo' => 'Pesquisar Pacientes', 'pesquisarpacientes' => $resultado];
+        $data = [
+            'titulo' => 'Pesquisar Pacientes',
+            'pesquisarpacientes' => $resultado,
+            'message' => $this->session->getFlashdata('message')
+        ];
         return view('pesquisarpacientes', $data);
     }
 }

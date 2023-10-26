@@ -4,11 +4,14 @@
 <div class="p-3 mb-2 bg-info text-dark">
   <div class="container">
     <h1>Cadastro de Paciente </h1>
+
+    <?= validation_list_errors(); ?>
     <form action="/sinteag/public/CadastrarPacientes/cadastrar" method="POST">
       <div class="form-row">
         <div class="form-group col-md-6">
           <label for="nome">Nome:</label>
-          <input type="text" class="form-control" id="nome_paciente" name="nome_paciente" placeholder="Nome">
+          <input value="<?= set_value('nome_paciente'); ?>" type="text" class="form-control" id="nome_paciente" name="nome_paciente" placeholder="Nome">
+          <span><?= validation_show_error('nome_paciente'); ?></span>
         </div>
         <div class="form-group col-md-6">
           <label for="cpf">CPF:</label>

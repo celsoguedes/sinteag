@@ -16,26 +16,25 @@
             <th>Valor</th>
             <th>Hora</th>
             <th>Status</th>
-            <th></th>
-            <th></th>
+            <th>Ações</th>
           </tr>
-
-
-          <?php foreach ($pesquisarconsultas as $key => $consulta) : ?>
+        </thead>
+        <tbody>
+          <?php foreach ($pesquisarconsultas as $consulta) : ?>
             <tr>
-              <td><?php echo $consulta['Nome_Paciente']; ?></td>
+              <td id="nome-<?= $consulta['Id_Agendamento']; ?>"><?= $consulta['Nome_Paciente']; ?></td>
               <td><?php echo $consulta['Nome_Profissional']; ?></td>
               <td><?php echo $consulta['agendamento']; ?></td>
               <td><?php echo $consulta['Valor']; ?></td>
               <td><?php echo $consulta['horario']; ?></td>
               <td><?php echo $consulta['Estado']; ?></td>
-              <td><a class="btn btn-primary" href="/sinteag/public/EditarConsulta/<?php echo $consulta['Id_Agendamento']; ?>"><i class="bi bi-pencil-square"></i></a></td>
-              <td><a class="btn btn-danger" href="/sinteag/public/EditarConsulta/excluir/<?= $consulta['Id_Agendamento']; ?>"><i class="bi bi-trash"></i></a></td>
-
-
-            <?php endforeach; ?>
+              <td style="white-space: nowrap;">
+                <a class="btn btn-primary" href="/sinteag/public/EditarConsulta/<?php echo $consulta['Id_Agendamento']; ?>"><i class="bi bi-pencil-square"></i></a>
+                <button id="btnExcluir" onclick="confirmaExclusao(<?= $consulta['Id_Agendamento']; ?>)" class="btn btn-danger"><i class="bi bi-trash"></i></button>
+              </td>
             </tr>
-            </tbody>
+          <?php endforeach; ?>
+        </tbody>
       </table>
     </div>
   </div>
@@ -47,6 +46,22 @@
 
   <script>
     new DataTable('#tabelaConsulta');
+
+    function confirmaExclusao(id) {
+      const nome = document.querySelector(`#nome-${id}`).textContent
+      Swal.fire({
+        title: `Deseja realmente excluir o agendamento de ${nome}?`,
+        showDenyButton: true,
+        confirmButtonText: 'Excluir',
+        denyButtonText: `Cancelar`,
+      }).then((result) => {
+        if (result.isConfirmed) {
+          window.open(`/sinteag/public/EditarConsulta/excluir/${id}`,"_self")
+          Swal.fire('Registro excluído com sucesso!', '', 'success')
+        }
+      })
+    }
+    
   </script>
 
   <?php echo $this->endSection(); ?>

@@ -10,7 +10,7 @@ d($this->data);
       <div class="form-row">
         <div class="form-group col-md-6">
           <label for="nome">Nome:</label>
-          <input type="text" class="form-control" id="nome_paciente" name="nome_paciente" placeholder="Nome" value="<?php echo $editarpacientes['Nome_Paciente']; ?>">
+          <input type="text" class="form-control" id="nome_paciente" name="nome_paciente" placeholder="Nome" value="<?= $editarpacientes['Nome_Paciente']; ?>">
         </div>
         <div class="form-group col-md-6">
           <label for="cpf">CPF:</label>

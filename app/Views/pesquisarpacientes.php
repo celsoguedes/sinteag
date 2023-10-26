@@ -1,6 +1,7 @@
 <?php echo $this->extend('modelos/layout'); ?>
 
-<?php echo $this->section('conteudo'); ?>
+<?php echo $this->section('conteudo');
+?>
 
 
 
@@ -38,9 +39,8 @@
 
 
     </div>
+    <span hidden id="message"><?= $this->data['message']; ?></span>
   </div>
-
-
 
   <?php echo $this->endSection(); ?>
 
@@ -48,6 +48,18 @@
 
   <script>
     new DataTable('#tabelaCelso');
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const message = document.querySelector('#message').innerText
+      if (message) {
+        Swal.fire({
+          icon: 'error',
+          title: 'Desculpe',
+          text: message,
+        })
+      }
+    })
+    
   </script>
 
   <?php echo $this->endSection(); ?>

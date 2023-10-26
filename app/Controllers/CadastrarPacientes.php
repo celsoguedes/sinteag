@@ -8,6 +8,8 @@ class CadastrarPacientes extends BaseController
 {
     private $db;
 
+    protected $helpers = ['form'];
+
     function __construct()
     {
         $this->db = \config\Database::connect();
@@ -23,6 +25,26 @@ class CadastrarPacientes extends BaseController
 
     public function cadastrar()
     {
+
+        $regras_validacao = [
+            'nome_paciente' => [
+                'rules' => 'required|min_length[3]',
+                'errors' => [
+                    'required' => 'O nome do paciente é obrigatório',
+                    'min_length' => 'O nome do paciente deve ter no mínimo 3 letras',
+                ]
+            ],
+            'cpf' => 'required|is_unique[pacientes.CPF]',
+            'data_nascimento' => 'required',
+            'cidade' => 'required',
+            'uf' => 'required',
+            'telefone' => 'required',
+        ];
+
+        if (!$this->validate($regras_validacao)) {
+            return redirect()->to('/public/CadastrarPacientes')->withInput();
+            // return redirect()->back()->withInput();
+        }
 
         print_r($_POST);
 
