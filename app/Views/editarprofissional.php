@@ -25,7 +25,7 @@
           <input type="text" class="form-control" id="dataNascimento" name="dataNascimento" placeholder="Data de Nascimento" value="<?php echo $editarprofissional['Data_Nascimento']; ?>">
         </div>
         <div class="form-group col-md-4">
-          <label for="sexo">Data de Nascimento:</label>
+          <label for="sexo">Sexo:</label>
           <input type="text" class="form-control" id="sexo" name="sexo" placeholder="Sexo" value="<?php echo $editarprofissional['Sexo']; ?>">
         </div>
         <div class="form-group col-md-4">

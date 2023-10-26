@@ -50,4 +50,18 @@ class EditarConsulta extends BaseController
         $db->table('agendamentos')->where('Id_Agendamento', $id)->update($data);
         return redirect()->to('/public/PesquisarConsultas');
     }
+
+    public function excluir($id)
+    {
+
+        // dd('teste');
+        $db = \config\Database::connect();
+
+        $db->table('agendamentos')->where('Id_Agendamento', $id)->delete(); //qualquer coisa grita que eu volto.b3z
+
+        //$query = $this->db->query("SELECT Id_Paciente, Nome_Paciente, CPF, Data_Nascimento, CEP, Logradouro, Bairro, Cidade, UF, Numero, Complemento, Telefone, OBS FROM pacientes WHERE Id_Paciente = '" . $id . "'");
+        //$resultado = $query->getRowArray();
+
+        return redirect()->to('/public/PesquisarConsultas');
+    }   
 }

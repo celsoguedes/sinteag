@@ -31,7 +31,7 @@
               <td><?php echo $profissional['CPF']; ?></td>
               <td><?php echo $profissional['Telefone']; ?></td>
               <td><?php echo $profissional['Sexo']; ?></td>
-              <td><a class="btn btn-primary" href="/sinteag/public/EditarProfissional/atualizar/<?php echo $profissional['Id_Profissional']; ?>"><i class="bi bi-pencil-square"></i></a></td>
+              <td><a class="btn btn-primary" href="/sinteag/public/EditarProfissional/index/<?php echo $profissional['Id_Profissional']; ?>"><i class="bi bi-pencil-square"></i></a></td>
               <td><a class="btn btn-danger" href="/sinteag/public/EditarProfissional/excluir/<?php echo $profissional['Id_Profissional']; ?>"><i class="bi bi-trash"></i></a></td>
             </tr>
           <?php endforeach; ?>

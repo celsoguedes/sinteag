@@ -39,8 +39,10 @@ $routes->get('/CadastrarUsuarios', 'CadastrarUsuarios');
 $routes->post('/CadastrarUsuarios/cadastrar','CadastrarUsuarios::cadastrar');
 $routes->get('/CadastrarConsultas', 'CadastrarConsultas::index');
 $routes->post('/CadastrarConsultas/cadastrar', 'CadastrarConsultas::cadastrar');
-$routes->get('/EditarConsulta/(:any)', 'EditarConsulta::index/$1');
+$routes->get('/EditarConsulta/excluir/(:any)', 'EditarConsulta::excluir/$1');
 $routes->post('/EditarConsulta/atualizar/(:any)', 'EditarConsulta::atualizar/$1');
+$routes->get('/EditarConsulta/(:any)', 'EditarConsulta::index/$1');
+
 
 $routes->post('/EditarPaciente/atualizar/(:any)', 'EditarPaciente::atualizar/$1');
 
@@ -56,7 +58,7 @@ $routes->get('/EditarPaciente/index/(:any)', 'EditarPaciente::index/$1');
 $routes->get('/EditarPaciente/excluir/(:any)', 'EditarPaciente::excluir/$1');
 
 $routes->get('/EditarProfissional/index/(:any)', 'EditarProfissional::index/$1');
-$routes->get('/EditarProfissional/atualizar/(:any)', 'EditarProfissional::atualizar/$1');
+$routes->post('/EditarProfissional/atualizar/(:any)', 'EditarProfissional::atualizar/$1');
 $routes->get('/EditarProfissional/excluir/(:any)', 'EditarProfissional::excluir/$1');
 
 

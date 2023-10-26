@@ -11,10 +11,10 @@
             Cadastro
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="CadastrarPacientes">Pacientes</a></li>
-            <li><a class="dropdown-item" href="CadastrarProfissionais">Profissionais</a></li>
-            <li><a class="dropdown-item" href="CadastrarConsultas">Consultas</a></li>
-            <li><a class="dropdown-item" href="CadastrarUsuarios">Usuários</a></li>
+            <li><a class="dropdown-item" href="/sinteag/public/CadastrarPacientes">Pacientes</a></li>
+            <li><a class="dropdown-item" href="/sinteag/public/CadastrarProfissionais">Profissionais</a></li>
+            <li><a class="dropdown-item" href="/sinteag/public/CadastrarConsultas">Consultas</a></li>
+            <li><a class="dropdown-item" href="/sinteag/public/CadastrarUsuarios">Usuários</a></li>
           </ul>
         </li>
         <li class="nav-item dropdown">
@@ -22,9 +22,9 @@
             Pesquisa
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="PesquisarPacientes">Pacientes</a></li>
-            <li><a class="dropdown-item" href="PesquisarProfissionais">Profissionais</a></li>
-            <li><a class="dropdown-item" href="PesquisarConsultas">Consultas</a></li>
+            <li><a class="dropdown-item" href="/sinteag/public/PesquisarPacientes">Pacientes</a></li>
+            <li><a class="dropdown-item" href="/sinteag/public/PesquisarProfissionais">Profissionais</a></li>
+            <li><a class="dropdown-item" href="/sinteag/public/PesquisarConsultas">Consultas</a></li>
           </ul>
         </li>
         <li class="nav-item dropdown">
@@ -32,8 +32,8 @@
             Caixa
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="MovimentoCaixa">Movimento de Caixa</a></li>
-            <li><a class="dropdown-item" href="RelatorioDeCaixa">Relatório de Caixa</a></li>
+            <li><a class="dropdown-item" href="/MovimentoCaixa">Movimento de Caixa</a></li>
+            <li><a class="dropdown-item" href="/RelatorioDeCaixa">Relatório de Caixa</a></li>
           </ul>
         </li>
       </ul>

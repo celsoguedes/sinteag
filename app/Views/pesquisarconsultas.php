@@ -30,7 +30,7 @@
               <td><?php echo $consulta['horario']; ?></td>
               <td><?php echo $consulta['Estado']; ?></td>
               <td><a class="btn btn-primary" href="/sinteag/public/EditarConsulta/<?php echo $consulta['Id_Agendamento']; ?>"><i class="bi bi-pencil-square"></i></a></td>
-              <td><a class="btn btn-danger" href="/sinteag/public/ExcluirConsulta/<?php echo $consulta['Id_Agendamento']; ?>"><i class="bi bi-trash"></i></a></td>
+              <td><a class="btn btn-danger" href="/sinteag/public/EditarConsulta/excluir/<?= $consulta['Id_Agendamento']; ?>"><i class="bi bi-trash"></i></a></td>
 
 
             <?php endforeach; ?>
