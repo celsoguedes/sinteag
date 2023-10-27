@@ -7,6 +7,7 @@ class CadastrarProfissionais extends BaseController
 
 {
     private $db;
+    protected $helpers = ['form'];
 
     function __construct()
     {
@@ -23,7 +24,58 @@ class CadastrarProfissionais extends BaseController
 
     public function cadastrar()
     {
-        echo "vamos cadastrar o bonitão";
+        $regras_validacao = [
+            'nome_profissional' => [
+                'rules' => 'required|min_length[3]',
+                'errors' => [
+                    'required' => 'O Nome do Profissional é obrigatório',
+                    'min_length' => 'O Nome do Profissional deve ter no mínimo 3 letras',
+                ]
+            ],
+            'cpf' => [
+                'rules' => 'required|min_length[11]',
+                'errors' => [
+                    'required' => 'O numero do CPF é obrigatório',
+                    'min_length' => 'O numero do CPF deve ter no mínimo 11 números',
+                ]
+            ],
+            //'cpf' => 'required|is_unique[pacientes.CPF]',
+            //'data_nascimento' => 'required',
+            'datanascimento' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'A Data de Nascimento é obrigatória'
+                ]
+            ],
+            //'cidade' => 'required',
+            'cidade' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'A Cidade é obrigatória'
+                ]
+            ],
+            //'uf' => 'required',
+            'uf' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'A UF é obrigatória'
+                ]
+            ],
+            //'telefone' => 'required',
+            'telefone' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'O número de Telefone é obrigatório'
+                ]
+            ],
+        ];
+
+
+        if (!$this->validate($regras_validacao)) {
+            return redirect()->to('/public/CadastrarProfissionais')->withInput();
+            // return redirect()->back()->withInput();
+        }
+
 
         //print_r($_POST);
 

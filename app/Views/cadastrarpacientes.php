@@ -15,13 +15,15 @@
         </div>
         <div class="form-group col-md-6">
           <label for="cpf">CPF:</label>
-          <input type="text" class="form-control" id="cpf" name="cpf" placeholder="CPF">
+          <input value="<?= set_value('cpf'); ?>" type="text" class="form-control" id="cpf" name="cpf" placeholder="CPF">
+          <span><?= validation_show_error('cpf'); ?></span>
         </div>
       </div>
       <div class="form-row">
         <div class="form-group col-md-4">
           <label for="dataNascimento">Data de Nascimento:</label>
-          <input type="text" class="form-control" id="data_nascimento" name="data_nascimento" placeholder="Data de Nascimento">
+          <input value="<?= set_value('data_nascimento'); ?>" type="text" class="form-control" id="data_nascimento" name="data_nascimento" placeholder="Data de Nascimento">
+          <span><?= validation_show_error('data_nascimento'); ?></span>
         </div>
         <div class="form-group col-md-4">
           <label for="cep">CEP:</label>
@@ -39,11 +41,13 @@
         </div>
         <div class="form-group col-md-4">
           <label for="cidade">Cidade:</label>
-          <input type="text" class="form-control" id="cidade" name="cidade" placeholder="Cidade">
+          <input value="<?= set_value('cidade'); ?>" type="text" class="form-control" id="cidade" name="cidade" placeholder="Cidade">
+          <span><?= validation_show_error('cidade'); ?></span>
         </div>
         <div class="form-group col-md-4">
           <label for="uf">UF:</label>
-          <input type="text" class="form-control" id="uf" name="uf" placeholder="UF">
+          <input value="<?= set_value('uf'); ?>" type="text" class="form-control" id="uf" name="uf" placeholder="UF">
+          <span><?= validation_show_error('uf'); ?></span>
         </div>
       </div>
       <div class="form-row">
@@ -59,7 +63,8 @@
       <div class="form-row">
         <div class="form-group col-md-6">
           <label for="telefone">Telefone:</label>
-          <input type="text" class="form-control" id="telefone" name="telefone" placeholder="Telefone">
+          <input value="<?= set_value('telefone'); ?>" type="text" class="form-control" id="telefone" name="telefone" placeholder="Telefone">
+          <span><?= validation_show_error('telefone'); ?></span>
         </div>
         <div class="form-group col-md-13">
           <label for="observacoes">Observações:</label>

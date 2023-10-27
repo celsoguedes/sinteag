@@ -30,15 +30,46 @@ class CadastrarPacientes extends BaseController
             'nome_paciente' => [
                 'rules' => 'required|min_length[3]',
                 'errors' => [
-                    'required' => 'O nome do paciente é obrigatório',
-                    'min_length' => 'O nome do paciente deve ter no mínimo 3 letras',
+                    'required' => 'O Nome do Paciente é obrigatório',
+                    'min_length' => 'O Nome do Paciente deve ter no mínimo 3 letras',
                 ]
             ],
-            'cpf' => 'required|is_unique[pacientes.CPF]',
-            'data_nascimento' => 'required',
-            'cidade' => 'required',
-            'uf' => 'required',
-            'telefone' => 'required',
+            'cpf' => [
+                'rules' => 'required|min_length[11]',
+                'errors' => [
+                    'required' => 'O numero do CPF é obrigatório',
+                    'min_length' => 'O numero do CPF deve ter no mínimo 11 números',
+                ]
+            ],
+            //'cpf' => 'required|is_unique[pacientes.CPF]',
+            //'data_nascimento' => 'required',
+            'data_nascimento' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'A Data de Nascimento é obrigatória'
+                ]
+            ],
+            //'cidade' => 'required',
+            'cidade' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'A Cidade é obrigatória'
+                ]
+            ],
+            //'uf' => 'required',
+            'uf' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'A UF é obrigatória'
+                ]
+            ],
+            //'telefone' => 'required',
+            'telefone' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'O número de Telefone é obrigatório'
+                ]
+            ],
         ];
 
         if (!$this->validate($regras_validacao)) {
