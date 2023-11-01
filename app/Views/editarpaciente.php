@@ -11,16 +11,19 @@ d($this->data);
         <div class="form-group col-md-6">
           <label for="nome">Nome:</label>
           <input type="text" class="form-control" id="nome_paciente" name="nome_paciente" placeholder="Nome" value="<?= $editarpacientes['Nome_Paciente']; ?>">
+          <span class="badge bg-danger"><?= validation_show_error('nome_paciente'); ?></span>
         </div>
         <div class="form-group col-md-6">
           <label for="cpf">CPF:</label>
           <input type="text" class="form-control" id="cpf" name="cpf" placeholder="CPF" value="<?php echo $editarpacientes['CPF']; ?>">
+          <span class="badge bg-danger"><?= validation_show_error('cpf'); ?></span>
         </div>
       </div>
       <div class="form-row">
         <div class="form-group col-md-4">
           <label for="dataNascimento">Data de Nascimento:</label>
           <input type="text" class="form-control" id="data_nascimento" name="data_nascimento" placeholder="Data de Nascimento" value="<?php echo $editarpacientes['Data_Nascimento']; ?>">
+          <span class="badge bg-danger"><?= validation_show_error('data_nascimento'); ?></span>
         </div>
         <div class="form-group col-md-4">
           <label for="cep">CEP:</label>
@@ -39,11 +42,12 @@ d($this->data);
         <div class="form-group col-md-4">
           <label for="cidade">Cidade:</label>
           <input type="text" class="form-control" id="cidade" name="cidade" placeholder="Cidade" value="<?php echo $editarpacientes['Cidade']; ?>">
+          <span class="badge bg-danger"><?= validation_show_error('cidade'); ?></span>
         </div>
         <div class="form-group col-md-4">
           <label for="uf">UF:</label>
           <input type="text" class="form-control" id="uf" name="uf" placeholder="UF" value="<?php echo $editarpacientes['UF']; ?>">
-        </div>
+          <span class="badge bg-danger"><?= validation_show_error('uf'); ?></span></div>
       </div>
       <div class="form-row">
         <div class="form-group col-md-3">
@@ -59,14 +63,14 @@ d($this->data);
         <div class="form-group col-md-6">
           <label for="telefone">Telefone:</label>
           <input type="text" class="form-control" id="telefone" name="telefone" placeholder="Telefone" value="<?php echo $editarpacientes['Telefone']; ?>">
-        </div>
+          <span class="badge bg-danger"><?= validation_show_error('telefone'); ?></span></div>
         <div class="form-group col-md-13">
           <label for="observacoes">Observações:</label>
           <textarea class="form-control" id="observacoes" name="observacoes" placeholder="Observações"></textarea
           value="<?php echo $editarpacientes['OBS']; ?>">
         </div>
       </div>
-      <button type="submit" class="btn btn-primary">Editar</button>
+      <button style="margin-top: 20px;" type="submit" class="btn btn-primary">Editar</button>
     </form>
   </div>
   </div>

@@ -6,14 +6,14 @@ use App\Models\AgendamentosModel;
 use App\Models\PacientesModel;
 class EditarConsulta extends BaseController
 {
-    //public function index(): string
+    protected $helpers = ['form'];
     public function index($id): string
     {   
         $db = \config\Database::connect();
         
         $pacientes = $db->query('select Id_Paciente, Nome_Paciente FROM pacientes')->getResultArray();
         $profissionais = $db->query('select Id_Profissional, Nome_Profissional FROM profissional')->getResultArray();
-        $query = $db->query("SELECT a.Id_Agendamento , p.Nome_Paciente, pr.Nome_Profissional, 
+        $query = $db->query("SELECT a.Id_Agendamento, a.Tipo_Consulta, p.Nome_Paciente, pr.Nome_Profissional, 
         a.agendamento, a.Valor, DATE_FORMAT(a.horario, '%H:%i') as horario, a.Estado, a.Profissional_Id, a.Paciente_Id
         FROM agendamentos as a
         join pacientes p ON a.paciente_id = p.Id_Paciente 

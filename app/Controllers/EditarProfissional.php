@@ -9,7 +9,7 @@ use CodeIgniter\Database\Exceptions\DatabaseException;
 class EditarProfissional extends BaseController
 
 {
-
+    protected $helpers = ['form'];
     public function index($id): string
     {
         $db = \config\Database::connect();

@@ -4,13 +4,14 @@ namespace App\Controllers;
 use App\Models\AgendamentosModel;
 use App\Models\PacientesModel;
 use CodeIgniter\Database\Exceptions\DatabaseException;
+use Exception;
 
 class EditarPaciente extends BaseController
 
 {
 
     private $db;
-    // protected $session;
+    protected $helpers = ['form'];
 
     function __construct()
     {
@@ -35,58 +36,76 @@ class EditarPaciente extends BaseController
             'nome_paciente' => [
                 'rules' => 'required',
                 'errors' => [
-                    'required' => 'O nome do paciente é obrigatório',
+                    'required' => 'O campo é obrigatório',
                 ]
             ],
-            'cpf' => 'required|is_unique[pacientes.CPF]',
-            'data_nascimento' => 'required',
-            'cidade' => 'required',
-            'uf' => 'required',
-            'telefone' => 'required',
+            'cpf' => [
+                'rules' => 'required|max_length[11]|min_length[11]',
+                'errors' => [
+                    'required' => 'O campo é obrigatório',
+                    'max_length' => 'Digite apenas 11 caracteres',
+                    'min_length' => 'Digite 11 caracteres',
+                ]
+            ],
+            'data_nascimento' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'O campo é obrigatório',
+                ]
+            ],
+            'cidade' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'O campo é obrigatório',
+                ]
+            ],
+            'uf' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'O campo é obrigatório',
+                ]
+            ],
+            'telefone' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'O campo é obrigatório',
+                ]
+            ],
         ];
 
         if (!$this->validate($regras_validacao)) {
-            return redirect()->to('/public/EditarPacientes')->withInput();
-            // return redirect()->back()->withInput();
+            return redirect()->to("/public/EditarPaciente/index/$id")->withInput();
         }
-
-        //atualização/update do paciente        
-        $nomePaciente = $_POST['nome_paciente'];
-        $cpf = $_POST['cpf'];
-        $dataNascimento = $_POST['data_nascimento'];
-        $cep = $_POST['cep'];
-        $logradouro = $_POST['logradouro'];
-        $bairro = $_POST['bairro'];
-        $cidade = $_POST['cidade'];
-        $uf = $_POST['uf'];
-        $numero = $_POST['numero'];
-        $complemento = $_POST['complemento'];
-        $telefone = $_POST['telefone'];
-        $observacoes = $_POST['observacoes'];
 
         $db = \config\Database::connect();
 
         $data = [
-            'Nome_Paciente' => $nomePaciente,
-            'CPF' => $cpf,
-            'Data_Nascimento' => $dataNascimento,
-            'Cep' => $cep,
-            'Logradouro' => $logradouro,
-            'Bairro' => $bairro,
-            'Cidade' => $cidade,
-            'UF' => $uf,
-            'Numero' => $numero,
-            'Complemento' => $complemento,
-            'Telefone' => $telefone,
-            'OBS' => $observacoes,
+            'Nome_Paciente' => $_POST['nome_paciente'],
+            'CPF' => $_POST['cpf'],
+            'Data_Nascimento' => $_POST['data_nascimento'],
+            'Cep' => $_POST['cep'],
+            'Logradouro' => $_POST['logradouro'],
+            'Bairro' => $_POST['bairro'],
+            'Cidade' => $_POST['cidade'],
+            'UF' => $_POST['uf'],
+            'Numero' => $_POST['numero'],
+            'Complemento' => $_POST['complemento'],
+            'Telefone' => $_POST['telefone'],
+            'OBS' => $_POST['observacoes'],
         ];
 
-        $db->table('pacientes')->where('Id_Paciente', $id)->update($data); //qualquer coisa grita que eu volto.b3z
+        try {
 
-        //$query = $this->db->query("SELECT Id_Paciente, Nome_Paciente, CPF, Data_Nascimento, CEP, Logradouro, Bairro, Cidade, UF, Numero, Complemento, Telefone, OBS FROM pacientes WHERE Id_Paciente = '" . $id . "'");
-        //$resultado = $query->getRowArray();
-
-        return redirect()->to('/public/PesquisarPacientes');
+            $db->table('pacientes')->where('Id_Paciente', $id)->update($data);
+            
+            $this->session->setFlashdata('sucesso', 'Paciente atualizado com sucesso!');
+            return redirect()->to('/public/PesquisarPacientes');
+        } catch (DatabaseException $e) {
+            dd($e);
+            $this->session->setFlashdata('erro', 'Erro ao atualizar paciente');
+            return redirect()->to('/public/PesquisarPacientes');
+        }
+        
     }   
 
     public function excluir($id)

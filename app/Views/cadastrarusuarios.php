@@ -5,13 +5,12 @@
   <div class="container">
     <h1>Cadastro de Usuario</h1>
 
-    <?= validation_list_errors(); ?>
     <form action="/sinteag/public/CadastrarUsuarios/cadastrar" method="POST">
       <div class="form-row">
         <div class="form-group col-md-6">
           <label for="nome">Nome:</label>
           <input value="<?= set_value('nome_usuario'); ?>" type="text" class="form-control" id="nome_usuario" name="nome_usuario" placeholder="Nome">
-          <span><?= validation_show_error('nome_usuario'); ?></span>
+          <span class="badge bg-danger"><?= validation_show_error('nome_usuario'); ?></span>
         </div>
         <div class="form-group col-md-6">
           <label for="login">Login:</label>
@@ -20,11 +19,11 @@
         <div class="form-group col-md-6">
           <label for="senha">Senha:</label>
           <input value="<?= set_value('senha'); ?>" type="text" class="form-control" id="senha" name="senha" placeholder="Senha">
-          <span><?= validation_show_error('senha'); ?></span>
+          <span class="badge bg-danger"><?= validation_show_error('senha'); ?></span>
         </div>
 
       </div>
-      <button type="submit" class="btn btn-primary">Cadastrar</button>
+      <button style="margin-top: 20px;" type="submit" class="btn btn-primary">Cadastrar</button>
     </form>
   </div>
 </div>

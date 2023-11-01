@@ -113,6 +113,7 @@ class CadastrarProfissionais extends BaseController
         ];
 
         $db->table('profissional')->insert($data); //qualquer coisa grita que eu volto.b3z
+        $this->session->setFlashdata('sucesso', 'Profissional cadastrado com sucesso!');
         return redirect()->to('/public/PesquisarProfissionais');
     }
 }

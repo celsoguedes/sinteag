@@ -5,18 +5,17 @@
   <div class="container">
     <h1>Cadastro de Profissional</h1>
 
-    <?= validation_list_errors(); ?>
     <form action="/sinteag/public/CadastrarProfissionais/cadastrar" method="POST">
       <div class="form-row">
         <div class="form-group col-md-6">
           <label for="nome">Nome:</label>
           <input value="<?= set_value('nome_profissional'); ?>" type="text" class="form-control" id="nome" name="nome_profissional" placeholder="Nome">
-          <span><?= validation_show_error('nome_profissional'); ?></span>
+          <span class="badge bg-danger"><?= validation_show_error('nome_profissional'); ?></span>
         </div>
         <div class="form-group col-md-6">
           <label for="cpf">CPF:</label>
           <input value="<?= set_value('cpf'); ?>" type="text" class="form-control" id="cpf" name="cpf" placeholder="CPF">
-          <span><?= validation_show_error('cpf'); ?></span>
+          <span class="badge bg-danger"><?= validation_show_error('cpf'); ?></span>
         </div>
         <div class="form-group col-md-6">
           <label for="cpf">Especialidade:</label>
@@ -27,7 +26,7 @@
         <div class="form-group col-md-4">
           <label for="dataNascimento">Data de Nascimento:</label>
           <input value="<?= set_value('datanascimento'); ?>" type="date" class="form-control" id="datanascimento" name="datanascimento" placeholder="Data de Nascimento">
-          <span><?= validation_show_error('datanascimento'); ?></span>
+          <span class="badge bg-danger"><?= validation_show_error('datanascimento'); ?></span>
         </div>
         <div class="form-group col-md-4">
           <label for="sexo">Sexo:</label>
@@ -50,12 +49,12 @@
         <div class="form-group col-md-4">
           <label for="cidade">Cidade:</label>
           <input value="<?= set_value('cidade'); ?>" type="text" class="form-control" id="cidade" name="cidade" placeholder="Cidade">
-          <span><?= validation_show_error('cidade'); ?></span>
+          <span class="badge bg-danger"><?= validation_show_error('cidade'); ?></span>
         </div>
         <div class="form-group col-md-4">
           <label for="uf">UF:</label>
           <input value="<?= set_value('uf'); ?>" type="text" class="form-control" id="uf" name="uf" placeholder="UF">
-          <span><?= validation_show_error('uf'); ?></span>
+          <span class="badge bg-danger"><?= validation_show_error('uf'); ?></span>
         </div>
       </div>
       <div class="form-row">
@@ -72,11 +71,11 @@
         <div class="form-group col-md-6">
           <label for="telefone">Telefone:</label>
           <input value="<?= set_value('telefone'); ?>" type="text" class="form-control" id="telefone" name="telefone" placeholder="Telefone">
-          <span><?= validation_show_error('telefone'); ?></span>
+          <span class="badge bg-danger"><?= validation_show_error('telefone'); ?></span>
         </div>
 
       </div>
-      <button type="submit" class="btn btn-primary">Cadastrar</button>
+      <button style="margin-top: 20px;" type="submit" class="btn btn-primary">Cadastrar</button>
     </form>
   </div>
 </div>

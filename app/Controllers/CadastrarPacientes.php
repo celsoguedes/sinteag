@@ -110,6 +110,7 @@ class CadastrarPacientes extends BaseController
         ];
 
         $db->table('pacientes')->insert($data);
+        $this->session->setFlashdata('sucesso', 'Paciente cadastrado com sucesso!');
         return redirect()->to('/public/PesquisarPacientes');
     }
 }

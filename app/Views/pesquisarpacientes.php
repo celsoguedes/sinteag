@@ -7,7 +7,7 @@
 <div class="p-3 mb-2 bg-info text-dark">
 
   <div class="row mt-3">
-    <div class="col-md-9">
+    <div class="col-md-12">
       <table class="table" id="tabelaCelso">
         <thead>
           <tr>
@@ -41,7 +41,7 @@
   <?php echo $this->section('scripts'); ?>
 
   <script>
-    new DataTable('#tabelaCelso');
+    new DataTable('#tabelaCelso', {language: {url: '/sinteag/public/pt-BR.json'}});
 
     document.addEventListener('DOMContentLoaded', () => {
       const sucesso = document.querySelector('#sucesso').innerText

@@ -8,6 +8,7 @@ use App\Models\PacientesModel;
 class CadastrarConsultas extends BaseController
 {
     private $db;
+    protected $helpers = ['form'];
 
     function __construct()
     {
@@ -34,6 +35,40 @@ class CadastrarConsultas extends BaseController
     
         $db = \config\Database::connect();
 
+        $regras_validacao = [
+            'Id_Paciente' => [
+                'rules' => 'required',
+                'errors' => ['required' => 'O campo é obrigatório']
+            ],
+            'Id_Profissional' => [
+                'rules' => 'required',
+                'errors' => ['required' => 'O campo é obrigatório']
+            ],
+            'tipoConsulta' => [
+                'rules' => 'required',
+                'errors' => ['required' => 'O campo é obrigatório']
+            ],
+            'valor' => [
+                'rules' => 'required',
+                'errors' => ['required' => 'O campo é obrigatório']
+            ],
+            'data' => [
+                'rules' => 'required',
+                'errors' => ['required' => 'O campo é obrigatório']
+            ],
+            'horario' => [
+                'rules' => 'required',
+                'errors' => ['required' => 'O campo é obrigatório']
+            ],
+            'estado_consulta' => [
+                'rules' => 'required',
+                'errors' => ['required' => 'O campo é obrigatório']
+            ],
+        ];
+
+        if (!$this->validate($regras_validacao)) {
+            return redirect()->to('/public/CadastrarConsultas')->withInput();
+        }
 
 
         $data = [

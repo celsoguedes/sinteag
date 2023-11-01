@@ -29,43 +29,41 @@ $routes->set404Override();
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->get('/Login', 'Login');
-$routes->get('/Home', 'Home::index');
-$routes->get('/CadastrarPacientes','CadastrarPacientes::index');
-$routes->post('/CadastrarPacientes/cadastrar','CadastrarPacientes::cadastrar');
-$routes->get('/CadastrarProfissionais','CadastrarProfissionais::index');
-$routes->post('/CadastrarProfissionais/cadastrar','CadastrarProfissionais::cadastrar');
-$routes->get('/CadastrarUsuarios', 'CadastrarUsuarios');
-$routes->post('/CadastrarUsuarios/cadastrar','CadastrarUsuarios::cadastrar');
-$routes->get('/CadastrarConsultas', 'CadastrarConsultas::index');
-$routes->post('/CadastrarConsultas/cadastrar', 'CadastrarConsultas::cadastrar');
-$routes->get('/EditarConsulta/excluir/(:any)', 'EditarConsulta::excluir/$1');
-$routes->post('/EditarConsulta/atualizar/(:any)', 'EditarConsulta::atualizar/$1');
-$routes->get('/EditarConsulta/(:any)', 'EditarConsulta::index/$1');
+$session = \Config\Services::session();
+// dd($session->get('logado'), $session->get('usuario'));
 
+$routes->get('/Login', 'Login::index');
+$routes->post('/Login', 'Login::autenticar');
 
-$routes->post('/EditarPaciente/atualizar/(:any)', 'EditarPaciente::atualizar/$1');
+if ($session->get('logado')) {
+    $routes->get('/logout', 'Login::deslogar');
 
-
-$routes->get('/PesquisarPacientes', 'PesquisarPacientes::index');
-$routes->get('/PesquisarProfissionais', 'PesquisarProfissionais');
-$routes->get('/PesquisarConsultas', 'PesquisarConsultas');
-$routes->get('/MovimentoCaixa', 'MovimentoCaixa');
-$routes->get('/RelatorioDeCaixa', 'RelatorioDeCaixa');
-
-//essas rotas estão conflitantes...
-$routes->get('/EditarPaciente/index/(:any)', 'EditarPaciente::index/$1');
-$routes->get('/EditarPaciente/excluir/(:any)', 'EditarPaciente::excluir/$1');
-
-$routes->get('/EditarProfissional/index/(:any)', 'EditarProfissional::index/$1');
-$routes->post('/EditarProfissional/atualizar/(:any)', 'EditarProfissional::atualizar/$1');
-$routes->get('/EditarProfissional/excluir/(:any)', 'EditarProfissional::excluir/$1');
-
-
-
-
-
-
+    $routes->get('/', 'Home::index');
+    $routes->get('/CadastrarPacientes','CadastrarPacientes::index');
+    $routes->post('/CadastrarPacientes/cadastrar','CadastrarPacientes::cadastrar');
+    $routes->get('/CadastrarProfissionais','CadastrarProfissionais::index');
+    $routes->post('/CadastrarProfissionais/cadastrar','CadastrarProfissionais::cadastrar');
+    $routes->get('/CadastrarUsuarios', 'CadastrarUsuarios');
+    $routes->post('/CadastrarUsuarios/cadastrar','CadastrarUsuarios::cadastrar');
+    $routes->get('/CadastrarConsultas', 'CadastrarConsultas::index');
+    $routes->post('/CadastrarConsultas/cadastrar', 'CadastrarConsultas::cadastrar');
+    $routes->get('/EditarConsulta/excluir/(:any)', 'EditarConsulta::excluir/$1');
+    $routes->post('/EditarConsulta/atualizar/(:any)', 'EditarConsulta::atualizar/$1');
+    $routes->get('/EditarConsulta/(:any)', 'EditarConsulta::index/$1');
+    $routes->post('/EditarPaciente/atualizar/(:any)', 'EditarPaciente::atualizar/$1');
+    $routes->get('/PesquisarPacientes', 'PesquisarPacientes::index');
+    $routes->get('/PesquisarProfissionais', 'PesquisarProfissionais');
+    $routes->get('/PesquisarConsultas', 'PesquisarConsultas');
+    $routes->get('/MovimentoCaixa', 'MovimentoCaixa');
+    $routes->get('/RelatorioDeCaixa', 'RelatorioDeCaixa');
+    $routes->get('/EditarPaciente/index/(:any)', 'EditarPaciente::index/$1');
+    $routes->get('/EditarPaciente/excluir/(:any)', 'EditarPaciente::excluir/$1');
+    $routes->get('/EditarProfissional/index/(:any)', 'EditarProfissional::index/$1');
+    $routes->post('/EditarProfissional/atualizar/(:any)', 'EditarProfissional::atualizar/$1');
+    $routes->get('/EditarProfissional/excluir/(:any)', 'EditarProfissional::excluir/$1');
+} else {
+    $routes->get('/', 'Login::index');
+}
 
 
 /*

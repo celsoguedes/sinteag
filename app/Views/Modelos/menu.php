@@ -1,6 +1,8 @@
+
+<?php $session = \Config\Services::session(); ?>
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
-    <a class="navbar-brand" href="/sinteag/public/Home">SINTEAG</a>
+    <a class="navbar-brand" href="/sinteag/public">SINTEAG</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -30,5 +32,7 @@
         
       </ul>
     </div>
+    <span class="navbar-brand"><?= $session->get('usuario'); ?></span>
+    <a class="navbar-brand" href="/sinteag/public/logout">Sair</a>
   </div>
 </nav>

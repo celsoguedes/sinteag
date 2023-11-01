@@ -16,16 +16,16 @@
             <th>Profissional</th>
             <th>Telefone</th>
           </tr>
-
+        </thead>
+        <tbody>
           <?php foreach ($home as $key => $home) : ?>
             <tr>
               <td><?php echo $home['Nome_Paciente']; ?></td>
-              <<td><?php echo date('H:i', strtotime($home['horario'])); ?></td>
+              <td><?php echo date('H:i', strtotime($home['horario'])); ?></td>
               <td><?php echo $home['Nome_Profissional']; ?></td>
               <td><?php echo $home['Telefone']; ?></td>
             <?php endforeach; ?>
-
-            </tbody>
+        </tbody>
       </table>
     </div>
   </div>
@@ -35,7 +35,7 @@
   <?php echo $this->section('scripts'); ?>
 
   <script>
-    new DataTable('#agenda');
+    new DataTable('#agenda', {language: {url: '/sinteag/public/pt-BR.json'}});
   </script>
 
   <?php echo $this->endSection(); ?>
