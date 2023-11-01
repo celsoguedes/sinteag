@@ -95,10 +95,11 @@ class EditarPaciente extends BaseController
 
         try {
             $db->table('pacientes')->where('Id_Paciente', $id)->delete(); //qualquer coisa grita que eu volto.b3z
+            $this->session->setFlashdata('sucesso', 'Registro excluído com sucesso!');
             return redirect()->to('/public/PesquisarPacientes');
         } catch(DatabaseException $e) {
             if ($e->getCode() == 1451) {
-                $this->session->setFlashdata('message', 'Paciente não pode ser excluído pois existe agendamento registrado');
+                $this->session->setFlashdata('erro', 'Paciente não pode ser excluído pois existe agendamento registrado');
                 return redirect()->to('/public/PesquisarPacientes');
             }
         }

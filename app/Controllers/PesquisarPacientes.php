@@ -22,7 +22,8 @@ class PesquisarPacientes extends BaseController
         $data = [
             'titulo' => 'Pesquisar Pacientes',
             'pesquisarpacientes' => $resultado,
-            'message' => $this->session->getFlashdata('message')
+            'sucesso' => $this->session->getFlashdata('sucesso'),
+            'erro' => $this->session->getFlashdata('erro')
         ];
         return view('pesquisarpacientes', $data);
     }

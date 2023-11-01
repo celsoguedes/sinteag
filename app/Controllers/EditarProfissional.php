@@ -2,6 +2,10 @@
 
 namespace App\Controllers;
 
+use App\Models\AgendamentosModel;
+use App\Models\PacientesModel;
+use CodeIgniter\Database\Exceptions\DatabaseException;
+
 class EditarProfissional extends BaseController
 
 {
@@ -61,12 +65,15 @@ class EditarProfissional extends BaseController
     public function excluir($id)
     {
         $db = \config\Database::connect();
-
-        $db->table('profissional')->where('Id_Profissional', $id)->delete(); //qualquer coisa grita que eu volto.b3z
-
-        //$query = $this->db->query("SELECT Id_Paciente, Nome_Paciente, CPF, Data_Nascimento, CEP, Logradouro, Bairro, Cidade, UF, Numero, Complemento, Telefone, OBS FROM pacientes WHERE Id_Paciente = '" . $id . "'");
-        //$resultado = $query->getRowArray();
-
-        return redirect()->to('/public/PesquisarProfissionais');
-    }   
+        try {
+            $db->table('profissional')->where('Id_Profissional', $id)->delete();
+            $this->session->setFlashdata('sucesso', 'Registro excluído com sucesso!');
+            return redirect()->to('/public/PesquisarProfissionais');
+        } catch (DatabaseException $e) {
+            if ($e->getCode() == 1451) {
+                $this->session->setFlashdata('erro', 'Profissional não pode ser excluído pois existe agendamento registrado');
+                return redirect()->to('/public/PesquisarProfissionais');
+            }
+        }
+    }
 }

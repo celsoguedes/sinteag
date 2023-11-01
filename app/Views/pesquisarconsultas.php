@@ -24,9 +24,9 @@
             <tr>
               <td id="nome-<?= $consulta['Id_Agendamento']; ?>"><?= $consulta['Nome_Paciente']; ?></td>
               <td><?php echo $consulta['Nome_Profissional']; ?></td>
-              <td><?php echo $consulta['agendamento']; ?></td>
+              <td><?php echo date_format(date_create($consulta['agendamento']), 'd/m/Y'); ?></td>
               <td><?php echo $consulta['Valor']; ?></td>
-              <td><?php echo $consulta['horario']; ?></td>
+              <td><?php echo date_format(date_create($consulta['horario']), 'H:i'); ?></td>
               <td><?php echo $consulta['Estado']; ?></td>
               <td style="white-space: nowrap;">
                 <a class="btn btn-primary" href="/sinteag/public/EditarConsulta/<?php echo $consulta['Id_Agendamento']; ?>"><i class="bi bi-pencil-square"></i></a>
@@ -36,6 +36,8 @@
           <?php endforeach; ?>
         </tbody>
       </table>
+      <span hidden id="sucesso"><?= empty($this->data['sucesso'])? null : $this->data['sucesso']; ?></span>
+      <span hidden id="erro"><?= empty($this->data['erro'])? null : $this->data['erro']; ?></span>
     </div>
   </div>
 
@@ -45,6 +47,21 @@
   <?php echo $this->section('scripts'); ?>
 
   <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const sucesso = document.querySelector('#sucesso').innerText
+      const erro = document.querySelector('#erro').innerText
+      if (sucesso) {
+        Swal.fire(sucesso, '', 'success')
+      }
+      if (erro) {
+        Swal.fire({
+          icon: 'error',
+          title: 'Desculpe',
+          text: erro,
+        })
+      }
+    })
+
     new DataTable('#tabelaConsulta');
 
     function confirmaExclusao(id) {

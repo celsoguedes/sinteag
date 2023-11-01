@@ -1,9 +1,6 @@
 <?php echo $this->extend('modelos/layout'); ?>
 
-<?php echo $this->section('conteudo');
-?>
-
-
+<?php echo $this->section('conteudo'); ?>
 
 <h1>Pesquisar Pacientes</h1>
 
@@ -17,29 +14,26 @@
             <th>Paciente</th>
             <th>CPF</th>
             <th>Telefone</th>
-            <th></th>
-            <th></th>
+            <th>Ações</th>
           </tr>
         </thead>
         <tbody>
-          <?php foreach ($pesquisarpacientes as $k => $paciente) : //aqui, $k = chave (0,1,2,3) e $paciente é um vetor dentro de cada chave, com os dados que a gente precisa. 
-          ?>
+          <?php foreach ($pesquisarpacientes as $k => $paciente) : ?>
             <tr>
-              <td><?php echo $paciente['Nome_Paciente']; // e aqui, na hora de mostrar não é com -> (objeto), mas sim com [''] (posição)
-                  ?></td>
+              <td id="nome-<?= $paciente['Id_Paciente']; ?>"><?= $paciente['Nome_Paciente']; ?></td>
               <td><?php echo $paciente['CPF']; ?></td>
               <td><?php echo $paciente['Telefone']; ?></td>
-              <td><a class="btn btn-primary" href="/sinteag/public/EditarPaciente/index/<?php echo $paciente['Id_Paciente']; ?>"><i class="bi bi-pencil-square"></i></a></td>
-              <td><a class="btn btn-danger" href="/sinteag/public/EditarPaciente/excluir/<?php echo $paciente['Id_Paciente']; ?>"><i class="bi bi-trash"></i></a></td>
-            <?php endforeach; ?>
+              <td style="white-space: nowrap;">
+                <a class="btn btn-primary" href="/sinteag/public/EditarPaciente/index/<?php echo $paciente['Id_Paciente']; ?>"><i class="bi bi-pencil-square"></i></a>
+                <button id="btnExcluir" onclick="confirmaExclusao(<?= $paciente['Id_Paciente']; ?>)" class="btn btn-danger"><i class="bi bi-trash"></i></button>
+              </td>
             </tr>
+          <?php endforeach; ?>
         </tbody>
-
       </table>
-
-
     </div>
-    <span hidden id="message"><?= $this->data['message']; ?></span>
+    <span hidden id="sucesso"><?= empty($this->data['sucesso'])? null : $this->data['sucesso']; ?></span>
+    <span hidden id="erro"><?= empty($this->data['erro'])? null : $this->data['erro']; ?></span>
   </div>
 
   <?php echo $this->endSection(); ?>
@@ -50,16 +44,34 @@
     new DataTable('#tabelaCelso');
 
     document.addEventListener('DOMContentLoaded', () => {
-      const message = document.querySelector('#message').innerText
-      if (message) {
+      const sucesso = document.querySelector('#sucesso').innerText
+      const erro = document.querySelector('#erro').innerText
+      if (sucesso) {
+        Swal.fire(sucesso, '', 'success')
+      }
+      if (erro) {
         Swal.fire({
           icon: 'error',
           title: 'Desculpe',
-          text: message,
+          text: erro,
         })
       }
     })
-    
+
+    function confirmaExclusao(id) {
+      const nome = document.querySelector(`#nome-${id}`).textContent
+      Swal.fire({
+        title: `Deseja realmente excluir o paciente ${nome}?`,
+        showDenyButton: true,
+        confirmButtonText: 'Excluir',
+        denyButtonText: `Cancelar`,
+      }).then((result) => {
+        if (result.isConfirmed) {
+          console.log('isConfirmed')
+          window.open(`/sinteag/public/EditarPaciente/excluir/${id}`, "_self")
+        }
+      })
+    }
   </script>
 
   <?php echo $this->endSection(); ?>

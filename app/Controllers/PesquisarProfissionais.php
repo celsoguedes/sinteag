@@ -16,7 +16,16 @@ class PesquisarProfissionais extends BaseController
         $profissionalModel = new ProfissionaisModel();
         $resultado = $profissionalModel->select('Id_Profissional, Nome_Profissional, CPF, Telefone,Sexo')->findAll();
 
-        $data = ['titulo' => 'Pesquisar Profissionais', 'pesquisarprofissionais' => $resultado];
+        //$data = ['titulo' => 'Pesquisar Profissionais', 
+        //'pesquisarprofissionais' => $resultado];
+        //return view('pesquisarprofissionais', $data);
+
+        $data = [
+            'titulo' => 'Pesquisar Profissionais',
+            'pesquisarprofissionais' => $resultado,
+            'sucesso' => $this->session->getFlashdata('sucesso'),
+            'erro' => $this->session->getFlashdata('erro')
+        ];
         return view('pesquisarprofissionais', $data);
     }
 }

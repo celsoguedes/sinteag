@@ -1,7 +1,6 @@
 <?php echo $this->extend('modelos/layout'); ?>
 
 <?php echo $this->section('conteudo');
-d($this->data['pacientes']);
 ?>
 <div class="p-3 mb-2 bg-info text-dark">
     <div class="container">
@@ -33,7 +32,7 @@ d($this->data['pacientes']);
             </div>
             <div class="form-group col-md-2">
                 <label for="valor">Valor:</label>
-                <input type="text" class="form-control" id="valor" name="valor">
+                <input type="number" class="form-control" id="valor" name="valor">
             </div>
             <div class="form-group col-md-2">
                 <label for="data">Data:</label>
@@ -52,6 +51,7 @@ d($this->data['pacientes']);
             </div>
             <button type="submit" class="btn btn-primary">Enviar</button>
         </form>
+        <span hidden id="erro"><?= empty($this->data['erro'])? null : $this->data['erro']; ?></span>
     </div>
 </div>
 <?php echo $this->endSection(); ?>
@@ -63,6 +63,18 @@ d($this->data['pacientes']);
         $('.paciente-select').select2();
         $('.profissional-select').select2();
     });
+
+    document.addEventListener('DOMContentLoaded', () => {
+
+    const erro = document.querySelector('#erro').innerText
+    if (erro) {
+        Swal.fire({
+            icon: 'error',
+            title: 'Desculpe',
+            text: erro,
+        })
+    }
+    })
 </script>
 
 <?php echo $this->endSection(); ?>

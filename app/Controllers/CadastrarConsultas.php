@@ -25,6 +25,7 @@ class CadastrarConsultas extends BaseController
             'titulo' => 'Cadastro de Consultas',
             'pacientes' => $pacientes,
             'profissionais' => $profissionais,
+            'erro' => $this->session->getFlashdata('erro')
         ];
         return view('cadastrarconsultas', $data);
     }
@@ -44,8 +45,19 @@ class CadastrarConsultas extends BaseController
             'horario' => $_POST['horario'],
             'Estado' => $_POST['estado_consulta'],
         ];
+        $verify = $db->table('agendamentos')->select('agendamento, horario')
+        ->where('profissional_id', $_POST['Id_Profissional'])
+        ->where('agendamento', $_POST['data'])
+        ->where('horario', $_POST['horario'])
+        ->get()->getResult();
 
-        $db->table('agendamentos')->insert($data);
-        return redirect()->to('/public/PesquisarConsultas');
+        if (empty($verify)) {
+            $db->table('agendamentos')->insert($data);
+            $this->session->setFlashdata('sucesso', 'Agendamento cadastrado com sucesso!');
+            return redirect()->to('/public/PesquisarConsultas');
+        } else {
+            $this->session->setFlashdata('erro', 'Erro, horário já agendado!');
+            return redirect()->to('/public/CadastrarConsultas');
+        }
     }
 }

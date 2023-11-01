@@ -22,7 +22,12 @@ class PesquisarConsultas extends BaseController
         //$agendamentosModel = new AgendamentosModel();
         //$resultado = $agendamentosModel->select('Id_Agendamento, paciente_id, profissional_id, agendamento,Valor, horario, Estado')->findAll();
 
-        $data = ['titulo' => 'Pesquisar Consultas', 'pesquisarconsultas' => $resultado];
+        $data = [
+            'titulo' => 'Pesquisar Consultas',
+            'pesquisarconsultas' => $resultado,
+            'sucesso' => $this->session->getFlashdata('sucesso')
+        ];
+        
         return view('pesquisarconsultas', $data);
     }
 }

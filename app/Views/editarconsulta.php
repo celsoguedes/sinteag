@@ -53,6 +53,7 @@
             </div>
             <button type="submit" class="btn btn-primary">Editar</button>
         </form>
+        <span hidden id="erro"><?= empty($this->data['erro'])? null : $this->data['erro']; ?></span>
     </div>
 </div>
 <?php echo $this->endSection(); ?>
@@ -60,6 +61,17 @@
 <?php echo $this->section('scripts'); ?>
 
 <script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+    const erro = document.querySelector('#erro').innerText
+    if (erro) {
+        Swal.fire({
+            icon: 'error',
+            title: 'Desculpe',
+            text: erro,
+        })
+    }
+    })
 
 </script>
 
