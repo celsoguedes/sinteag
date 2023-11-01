@@ -1,5 +1,5 @@
 system
 /system
-writable/cache
-writable/debugbar
-writable/session
+writable/cache/
+writable/debugbar/
+writable/session/
