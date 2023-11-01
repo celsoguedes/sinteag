@@ -73,7 +73,7 @@ d($this->data);
   <tbody>
   
     
-  <button type="submit">Salvar</button>
+
 
  
 </form>

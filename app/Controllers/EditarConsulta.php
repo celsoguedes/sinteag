@@ -55,6 +55,7 @@ class EditarConsulta extends BaseController
         ->where('profissional_id', $_POST['Id_Profissional'])
         ->where('agendamento', $_POST['data'])
         ->where('horario', $_POST['horario'])
+        ->where('Id_Agendamento !=', $id)
         ->get()->getResult();
 
         if (empty($verify)) {

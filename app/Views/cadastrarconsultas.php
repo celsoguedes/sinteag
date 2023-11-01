@@ -40,7 +40,7 @@
             </div>
             <div class="form-group col-md-2">
                 <label for="horario">Horário:</label>
-                <input type="time" class="form-control" id="horario" name="horario">
+                <input type="time" pattern="[0-9]{2}:[0-9]{2}" class="form-control" id="horario" name="horario">
             </div>
             <div class="form-group col-md-2">
                 <label for="estado">Status da Consulta:</label>

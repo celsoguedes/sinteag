@@ -40,6 +40,7 @@
                 <label for="data">Data:</label>
                 <input type="date" class="form-control" id="data" name="data" value="<?php echo $editarconsulta['agendamento']; ?>">
             </div>
+            <!-- esse date é puro do html ou vc colocou alguma biblioteca?  -->
             <div class="form-group col-md-2">
                 <label for="horario">Horário:</label>
                 <input type="time" class="form-control" id="horario" name="horario" value="<?php echo $editarconsulta['horario']; ?>">

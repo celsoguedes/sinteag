@@ -22,7 +22,7 @@
       <div class="form-row">
         <div class="form-group col-md-4">
           <label for="dataNascimento">Data de Nascimento:</label>
-          <input value="<?= set_value('data_nascimento'); ?>" type="text" class="form-control" id="data_nascimento" name="data_nascimento" placeholder="Data de Nascimento">
+          <input value="<?= set_value('data_nascimento'); ?>" type="date" class="form-control" id="data_nascimento" name="data_nascimento" placeholder="Data de Nascimento">
           <span><?= validation_show_error('data_nascimento'); ?></span>
         </div>
         <div class="form-group col-md-4">
