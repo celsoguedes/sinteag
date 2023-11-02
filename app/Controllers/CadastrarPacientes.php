@@ -35,10 +35,11 @@ class CadastrarPacientes extends BaseController
                 ]
             ],
             'cpf' => [
-                'rules' => 'required|min_length[11]',
+                'rules' => 'required|max_length[11]|min_length[11]',
                 'errors' => [
-                    'required' => 'O numero do CPF é obrigatório',
-                    'min_length' => 'O numero do CPF deve ter no mínimo 11 números',
+                    'required' => 'O campo é obrigatório',
+                    'max_length' => 'Digite apenas 11 caracteres',
+                    'min_length' => 'Digite 11 caracteres',
                 ]
             ],
             //'cpf' => 'required|is_unique[pacientes.CPF]',

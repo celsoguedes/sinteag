@@ -33,28 +33,25 @@ class CadastrarProfissionais extends BaseController
                 ]
             ],
             'cpf' => [
-                'rules' => 'required|min_length[11]',
+                'rules' => 'required|max_length[11]|min_length[11]',
                 'errors' => [
-                    'required' => 'O numero do CPF é obrigatório',
-                    'min_length' => 'O numero do CPF deve ter no mínimo 11 números',
+                    'required' => 'O campo é obrigatório',
+                    'max_length' => 'Digite apenas 11 caracteres',
+                    'min_length' => 'Digite 11 caracteres',
                 ]
             ],
-            //'cpf' => 'required|is_unique[pacientes.CPF]',
-            //'data_nascimento' => 'required',
             'datanascimento' => [
                 'rules' => 'required',
                 'errors' => [
                     'required' => 'A Data de Nascimento é obrigatória'
                 ]
             ],
-            //'cidade' => 'required',
             'cidade' => [
                 'rules' => 'required',
                 'errors' => [
                     'required' => 'A Cidade é obrigatória'
                 ]
             ],
-            //'uf' => 'required',
             'uf' => [
                 'rules' => 'required',
                 'errors' => [

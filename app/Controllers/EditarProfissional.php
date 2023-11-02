@@ -27,6 +27,55 @@ class EditarProfissional extends BaseController
 
     public function atualizar($id)
     {
+
+        $regras_validacao = [
+            'nomeProfissional' => [
+                'rules' => 'required|min_length[3]',
+                'errors' => [
+                    'required' => 'O Nome do Profissional é obrigatório',
+                    'min_length' => 'O Nome do Profissional deve ter no mínimo 3 letras',
+                ]
+            ],
+            'cpf' => [
+                'rules' => 'required|max_length[11]|min_length[11]',
+                'errors' => [
+                    'required' => 'O campo é obrigatório',
+                    'max_length' => 'Digite apenas 11 caracteres',
+                    'min_length' => 'Digite 11 caracteres',
+                ]
+            ],
+            'dataNascimento' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'A Data de Nascimento é obrigatória'
+                ]
+            ],
+            'cidade' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'A Cidade é obrigatória'
+                ]
+            ],
+            'uf' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'A UF é obrigatória'
+                ]
+            ],
+            //'telefone' => 'required',
+            'telefone' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'O número de Telefone é obrigatório'
+                ]
+            ],
+        ];
+
+
+        if (!$this->validate($regras_validacao)) {
+            return redirect()->to("/public/EditarProfissional/index/$id")->withInput();
+            // return redirect()->back()->withInput();
+        }
         //atualização/update do profissional       
         $nomeProfissional = $_POST['nomeProfissional'];
         $formacao = $_POST['formacao'];
@@ -59,8 +108,17 @@ class EditarProfissional extends BaseController
             'Complemento' => $complemento,
             'Telefone' => $telefone,
         ];
-        $db->table('profissional')->where('Id_Profissional', $id)->update($data);
-        return redirect()->to('/public/PesquisarProfissionais');
+        try {
+
+            $db->table('profissional')->where('Id_Profissional', $id)->update($data);
+            
+            $this->session->setFlashdata('sucesso', 'Profissional atualizado com sucesso!');
+            return redirect()->to('/public/PesquisarProfissionais');
+        } catch (DatabaseException $e) {
+            dd($e);
+            $this->session->setFlashdata('erro', 'Erro ao atualizar profissional');
+            return redirect()->to('/public/PesquisarProfissionais');
+        }
     }
     public function excluir($id)
     {
