@@ -34,9 +34,10 @@ class EditarPaciente extends BaseController
     {
         $regras_validacao = [
             'nome_paciente' => [
-                'rules' => 'required',
+                'rules' => 'required|min_length[3]',
                 'errors' => [
-                    'required' => 'O campo é obrigatório',
+                    'required' => 'O Nome do Paciente é obrigatório',
+                    'min_length' => 'O Nome do Paciente deve ter no mínimo 3 letras',
                 ]
             ],
             'cpf' => [

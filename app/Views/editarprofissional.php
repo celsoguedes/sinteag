@@ -24,12 +24,16 @@
       <div class="form-row">
         <div class="form-group col-md-4">
           <label for="dataNascimento">Data de Nascimento:</label>
-          <input value="<?= set_value('datanascimento'); ?>" type="date" class="form-control" id="dataNascimento" name="dataNascimento" placeholder="Data de Nascimento" value="<?php echo $editarprofissional['Data_Nascimento']; ?>">
+          <input value="<?= $editarprofissional['Data_Nascimento']; ?>" type="date" class="form-control" id="dataNascimento" name="dataNascimento" placeholder="Data de Nascimento" value="<?php echo $editarprofissional['Data_Nascimento']; ?>">
           <span class="badge bg-danger"><?= validation_show_error('dataNascimento'); ?></span>
         </div>
         <div class="form-group col-md-4">
           <label for="sexo">Sexo:</label>
-          <input type="text" class="form-control" id="sexo" name="sexo" placeholder="Sexo" value="<?php echo $editarprofissional['Sexo']; ?>">
+          <select id="sexo" name="sexo" class="form-control">
+            <option value="">Selecione...</option>
+            <option value="M" <?php if($editarprofissional['Sexo'] == "M") echo "selected"; ?>>Masculino</option>
+            <option value="F" <?php if($editarprofissional['Sexo'] == "F") echo "selected"; ?>>Feminino</option>
+          </select>
         </div>
         <div class="form-group col-md-4">
           <label for="cep">CEP:</label>

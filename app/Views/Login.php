@@ -14,19 +14,12 @@
                     <input name="senha" required type="password" class="form-control" id="inputSenha" paceholder="Senha" />
                     <label for="inputSenha">Senha</label>
                 </div>
-                <div class="checkbox mb -3">
-                    <label>
-                        <input type="checkbox" value="lembrar de mim">Lembrar de mim
-                    </label>
-                </div>
+
                 <button class="W-100 btn btn-lg btn-success" type="submit">Entrar</button>
             </form>
             <span hidden id="erro"><?= empty($this->data['erro']) ? null : $this->data['erro']; ?></span>
         </div>
     </div>
-
-    <?php echo $this->endSection(); ?>
-
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
@@ -40,3 +33,5 @@
             }
         })
     </script>
+
+<?php echo $this->endSection(); ?>

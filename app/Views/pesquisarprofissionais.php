@@ -26,8 +26,10 @@
               <td><?php echo $profissional['Telefone']; ?></td>
               <td><?php echo $profissional['Sexo']; ?></td>
               <td style="white-space: nowrap;">
-                <a class="btn btn-primary" href="/sinteag/public/EditarProfissional/index/<?php echo $profissional['Id_Profissional']; ?>"><i class="bi bi-pencil-square"></i></a>
-                <button id="btnExcluir" onclick="confirmaExclusao(<?= $profissional['Id_Profissional']; ?>)" class="btn btn-danger"><i class="bi bi-trash"></i></button>
+                <a class="btn btn-primary" href="/sinteag/public/EditarProfissional/index/<?php echo $profissional['Id_Profissional']; 
+                ?>"><i class="bi bi-pencil-square"></i></a>
+                <button id="btnExcluir" onclick="confirmaExclusao(<?= $profissional['Id_Profissional']; ?>)" class="btn btn-danger">
+                <i class="bi bi-trash"></i></button>
               </td>
             </tr>
           <?php endforeach; ?>

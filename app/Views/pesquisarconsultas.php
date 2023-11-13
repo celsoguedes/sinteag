@@ -29,10 +29,13 @@
               <td><?php echo date_format(date_create($consulta['agendamento']), 'd/m/Y'); ?></td>
               <td><?php echo date_format(date_create($consulta['horario']), 'H:i'); ?></td>
               <td><?php echo 'R$ '.number_format($consulta['Valor'], 2, ',', '.'); ?></td>
-              <td <?php if($consulta['Estado'] == 'realizada') echo "style='color:green'"; else echo "style='color:red'" ?> ><?php echo $consulta['Estado']; ?></td>
+              <td <?php if($consulta['Estado'] == 'realizada') echo "style='color:green'"; 
+              else echo "style='color:red'" ?> ><?php echo $consulta['Estado']; ?></td>
               <td style="white-space: nowrap;">
-                <a class="btn btn-primary" href="/sinteag/public/EditarConsulta/<?php echo $consulta['Id_Agendamento']; ?>"><i class="bi bi-pencil-square"></i></a>
-                <button id="btnExcluir" onclick="confirmaExclusao(<?= $consulta['Id_Agendamento']; ?>)" class="btn btn-danger"><i class="bi bi-trash"></i></button>
+                <a class="btn btn-primary" href="/sinteag/public/EditarConsulta/<?php echo $consulta['Id_Agendamento'];
+                 ?>"><i class="bi bi-pencil-square"></i></a>
+                <button id="btnExcluir" onclick="confirmaExclusao(<?= $consulta['Id_Agendamento'];
+                 ?>)" class="btn btn-danger"><i class="bi bi-trash"></i></button>
               </td>
             </tr>
           <?php endforeach; ?>

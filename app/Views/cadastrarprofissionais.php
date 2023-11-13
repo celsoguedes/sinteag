@@ -30,7 +30,11 @@
         </div>
         <div class="form-group col-md-4">
           <label for="sexo">Sexo:</label>
-          <input type="text" class="form-control" id="sexo" name="sexo" placeholder="Sexo">
+          <select id="sexo" name="sexo" class="form-control">
+            <option value="">Selecione...</option>
+            <option value="M">Masculino</option>
+            <option value="F">Feminino</option>
+          </select>
         </div>
         <div class="form-group col-md-4">
           <label for="cep">CEP:</label>

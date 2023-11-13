@@ -1,6 +1,6 @@
 <?php echo $this->extend('modelos/layout'); ?>
 
-<?php echo $this->section('conteudo');?>
+<?php echo $this->section('conteudo'); ?>
 <div class="p-3 mb-2 bg-info text-dark">
   <div class="container">
     <h1>Editar Paciente</h1>
@@ -20,7 +20,7 @@
       <div class="form-row">
         <div class="form-group col-md-4">
           <label for="dataNascimento">Data de Nascimento:</label>
-          <input value="<?= set_value('datanascimento'); ?>" type="date" class="form-control" id="data_nascimento" name="data_nascimento" placeholder="Data de Nascimento" value="<?php echo $editarpacientes['Data_Nascimento']; ?>">
+          <input value="<?= $editarpacientes['Data_Nascimento']; ?>" type="date" class="form-control" id="data_nascimento" name="data_nascimento" placeholder="Data de Nascimento" value="<?php echo $editarpacientes['Data_Nascimento']; ?>">
           <span class="badge bg-danger"><?= validation_show_error('data_nascimento'); ?></span>
         </div>
         <div class="form-group col-md-4">

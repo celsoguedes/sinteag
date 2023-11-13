@@ -31,6 +31,42 @@ class EditarConsulta extends BaseController
         return view('editarconsulta', $data);
     }
     public function atualizar($id)    {    
+
+        $regras_validacao = [
+            'Id_Paciente' => [
+                'rules' => 'required',
+                'errors' => ['required' => 'O campo é obrigatório']
+            ],
+            'Id_Profissional' => [
+                'rules' => 'required',
+                'errors' => ['required' => 'O campo é obrigatório']
+            ],
+            'tipoConsulta' => [
+                'rules' => 'required',
+                'errors' => ['required' => 'O campo é obrigatório']
+            ],
+            'valor' => [
+                'rules' => 'required',
+                'errors' => ['required' => 'O campo é obrigatório']
+            ],
+            'data' => [
+                'rules' => 'required',
+                'errors' => ['required' => 'O campo é obrigatório']
+            ],
+            'horario' => [
+                'rules' => 'required',
+                'errors' => ['required' => 'O campo é obrigatório']
+            ],
+            'estado_consulta' => [
+                'rules' => 'required',
+                'errors' => ['required' => 'O campo é obrigatório']
+            ],
+        ];
+
+        if (!$this->validate($regras_validacao)) {
+            return redirect()->to('/public/EditarConsulta/$id')->withInput();
+        }
+
         $db = \config\Database::connect();
 
         $paciente = $_POST['Id_Paciente'];

@@ -30,14 +30,11 @@ $routes->set404Override();
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $session = \Config\Services::session();
-// dd($session->get('logado'), $session->get('usuario'));
-
 $routes->get('/Login', 'Login::index');
 $routes->post('/Login', 'Login::autenticar');
 
 if ($session->get('logado')) {
     $routes->get('/logout', 'Login::deslogar');
-
     $routes->get('/', 'Home::index');
     $routes->get('/CadastrarPacientes','CadastrarPacientes::index');
     $routes->post('/CadastrarPacientes/cadastrar','CadastrarPacientes::cadastrar');
