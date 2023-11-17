@@ -32,6 +32,7 @@ class EditarConsulta extends BaseController
     }
     public function atualizar($id)    {    
 
+        
         $regras_validacao = [
             'Id_Paciente' => [
                 'rules' => 'required',
@@ -57,18 +58,17 @@ class EditarConsulta extends BaseController
                 'rules' => 'required',
                 'errors' => ['required' => 'O campo é obrigatório']
             ],
-            'estado_consulta' => [
+            'estado' => [
                 'rules' => 'required',
                 'errors' => ['required' => 'O campo é obrigatório']
             ],
         ];
-
+        
         if (!$this->validate($regras_validacao)) {
-            return redirect()->to('/public/EditarConsulta/$id')->withInput();
+            return redirect()->to('/public/EditarConsulta/'.$id)->withInput();
         }
 
         $db = \config\Database::connect();
-
         $paciente = $_POST['Id_Paciente'];
         $profissional = $_POST['Id_Profissional'];
         $TipoConsulta = $_POST['tipoConsulta'];
@@ -86,21 +86,21 @@ class EditarConsulta extends BaseController
             'horario' => $hora,
             'Estado' => $estado,
         ];
-
+        
         $verify = $db->table('agendamentos')->select('agendamento, horario')
         ->where('profissional_id', $_POST['Id_Profissional'])
         ->where('agendamento', $_POST['data'])
         ->where('horario', $_POST['horario'])
         ->where('Id_Agendamento !=', $id)
         ->get()->getResult();
-
+        
         if (empty($verify)) {
             $db->table('agendamentos')->where('Id_Agendamento', $id)->update($data);
             $this->session->setFlashdata('sucesso', 'Agendamento atualizado com sucesso!');
             return redirect()->to('/public/PesquisarConsultas');
         } else {
             $this->session->setFlashdata('erro', 'Erro, horário já agendado!');
-            return redirect()->to("/public/EditarConsulta/$id");
+            return redirect()->to("/public/EditarConsulta/".$id);
         }
     }
 

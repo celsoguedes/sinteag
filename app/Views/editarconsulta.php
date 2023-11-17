@@ -1,10 +1,10 @@
 <?php echo $this->extend('modelos/layout'); ?>
-
-<?php echo $this->section('conteudo'); ?>
+<?php echo $this->section('conteudo'); 
+?>
 <div class="p-3 mb-2 bg-info text-dark">
     <div class="container">
-        <h1>Editar Consulta</h1>
-        <form method="post" action="atualizar/<?php echo $editarconsulta['Id_Agendamento']; ?>">
+        <h1>Editar Consulta</h1>        
+        <form method="post" action="/sinteag/public/EditarConsulta/atualizar/<?php echo $editarconsulta['Id_Agendamento'];?>">        
             <div class="form-group col-md-6">
                 <label for="Id_Paciente">Paciente:</label>
                 <select class="paciente-select form-control" name="Id_Paciente" id="Id_Paciente">

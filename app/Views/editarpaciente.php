@@ -45,7 +45,8 @@
         <div class="form-group col-md-4">
           <label for="uf">UF:</label>
           <input type="text" class="form-control" id="uf" name="uf" placeholder="UF" value="<?php echo $editarpacientes['UF']; ?>">
-          <span class="badge bg-danger"><?= validation_show_error('uf'); ?></span></div>
+          <span class="badge bg-danger"><?= validation_show_error('uf'); ?></span>
+        </div>
       </div>
       <div class="form-row">
         <div class="form-group col-md-3">
@@ -61,7 +62,8 @@
         <div class="form-group col-md-6">
           <label for="telefone">Telefone:</label>
           <input type="text" class="form-control" id="telefone" name="telefone" placeholder="Telefone" value="<?php echo $editarpacientes['Telefone']; ?>">
-          <span class="badge bg-danger"><?= validation_show_error('telefone'); ?></span></div>
+          <span class="badge bg-danger"><?= validation_show_error('telefone'); ?></span>
+        </div>
         <div class="form-group col-md-13">
           <label for="observacoes">Observações:</label>
           <textarea class="form-control" id="observacoes" name="observacoes" placeholder="Observações"></textarea
@@ -84,8 +86,10 @@
 
 <?php echo $this->section('scripts'); ?>
 
+
 <script>
-    
+
 </script>
+</script
 
 <?php echo $this->endSection(); ?>

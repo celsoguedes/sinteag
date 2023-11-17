@@ -13,6 +13,8 @@
         <script src="<?= base_url("public/js/datatables.min.js"); ?>"></script>
         <script src="<?= base_url("public/js/select2.min.js"); ?>"></script>
         <script src="<?= base_url("public/js/sweetalert2.all.min.js"); ?>"></script>
+
+
     </head>
 
     <body>
